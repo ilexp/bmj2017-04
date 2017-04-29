@@ -721,6 +721,9 @@
         <_items dataType="Array" type="Duality.Component[]" id="2292903456" length="4">
           <item dataType="Struct" type="Game.Player" id="1808342153">
             <active dataType="Bool">true</active>
+            <bgMusic dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Sound]]">
+              <contentPath dataType="String">Data\Audio\SomeBGMusic.Sound.res</contentPath>
+            </bgMusic>
             <character dataType="ObjectRef">1787928918</character>
             <gameobj dataType="ObjectRef">2876092272</gameobj>
             <jointedThings dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Components.Physics.DistanceJointInfo]]" id="3785714605">

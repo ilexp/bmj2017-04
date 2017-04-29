@@ -4,8 +4,10 @@ using System.Linq;
 
 using Duality;
 using Duality.Components;
+using Duality.Audio;
 using Duality.Editor;
 using Duality.Input;
+using Duality.Resources;
 
 using Duality.Samples.Tilemaps.RpgLike;
 using Duality.Components.Physics;
@@ -13,17 +15,33 @@ using Duality.Drawing;
 
 
 namespace Game {
-	public class Player : Component, ICmpUpdatable {
+	public class Player : Component, ICmpUpdatable, ICmpInitializable {
 		private CharacterController character;
 		private List<DistanceJointInfo> jointedThings = new List<DistanceJointInfo>();
+		private ContentRef<Sound> bgMusic = null;
+
+		[DontSerialize] private SoundInstance bgTrack = null;
 
 		public CharacterController Character {
 			get { return this.character; }
 			set { this.character = value; }
 		}
+		public ContentRef<Sound> BackgroundMusic
+		{
+			get { return this.bgMusic; }
+			set { this.bgMusic = value; }
+		}
 
 		void ICmpUpdatable.OnUpdate() {
 			if (this.character == null) return;
+
+			if (this.bgTrack == null || this.bgTrack.Disposed)
+			{
+				this.bgTrack = DualityApp.Sound.PlaySound(this.bgMusic);
+				this.bgTrack.Looped = true;
+				this.bgTrack.FadeIn(2.0f);
+			}
+
 			if (DualityApp.Keyboard.KeyHit(Key.Q) || DualityApp.Gamepads.Any((arg) => arg.ButtonHit(GamepadButton.A))) {
 				GrabObjects();
 			}
@@ -86,6 +104,18 @@ namespace Game {
 						rb.AddJoint(distJoint, item);
 						jointedThings.Add(distJoint);
 					}
+				}
+			}
+		}
+
+		void ICmpInitializable.OnInit(InitContext context) { }
+		void ICmpInitializable.OnShutdown(ShutdownContext context)
+		{
+			if (context == ShutdownContext.Deactivate)
+			{
+				if (this.bgTrack != null)
+				{
+					this.bgTrack.FadeOut(2.0f);
 				}
 			}
 		}
