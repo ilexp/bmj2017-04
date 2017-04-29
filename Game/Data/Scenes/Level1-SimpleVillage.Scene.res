@@ -409,48 +409,7 @@
               <_items dataType="Array" type="Duality.Component[]" id="625392590" length="4">
                 <item dataType="Struct" type="Duality.Components.Transform" id="2708388107">
                   <active dataType="Bool">true</active>
-                  <angle dataType="Float">0</angle>
-                  <angleAbs dataType="Float">0</angleAbs>
-                  <angleVel dataType="Float">0</angleVel>
-                  <angleVelAbs dataType="Float">0</angleVelAbs>
-                  <deriveAngle dataType="Bool">true</deriveAngle>
                   <gameobj dataType="ObjectRef">348073175</gameobj>
-                  <ignoreParent dataType="Bool">false</ignoreParent>
-                  <parentTransform dataType="Struct" type="Duality.Components.Transform" id="2226628017">
-                    <active dataType="Bool">true</active>
-                    <angle dataType="Float">0</angle>
-                    <angleAbs dataType="Float">0</angleAbs>
-                    <angleVel dataType="Float">0</angleVel>
-                    <angleVelAbs dataType="Float">0</angleVelAbs>
-                    <deriveAngle dataType="Bool">true</deriveAngle>
-                    <gameobj dataType="ObjectRef">4161280381</gameobj>
-                    <ignoreParent dataType="Bool">false</ignoreParent>
-                    <parentTransform />
-                    <pos dataType="Struct" type="Duality.Vector3">
-                      <X dataType="Float">0</X>
-                      <Y dataType="Float">0</Y>
-                      <Z dataType="Float">-250</Z>
-                    </pos>
-                    <posAbs dataType="Struct" type="Duality.Vector3">
-                      <X dataType="Float">0</X>
-                      <Y dataType="Float">0</Y>
-                      <Z dataType="Float">-250</Z>
-                    </posAbs>
-                    <scale dataType="Float">1</scale>
-                    <scaleAbs dataType="Float">1</scaleAbs>
-                    <vel dataType="Struct" type="Duality.Vector3" />
-                    <velAbs dataType="Struct" type="Duality.Vector3" />
-                  </parentTransform>
-                  <pos dataType="Struct" type="Duality.Vector3" />
-                  <posAbs dataType="Struct" type="Duality.Vector3">
-                    <X dataType="Float">0</X>
-                    <Y dataType="Float">0</Y>
-                    <Z dataType="Float">-250</Z>
-                  </posAbs>
-                  <scale dataType="Float">1</scale>
-                  <scaleAbs dataType="Float">1</scaleAbs>
-                  <vel dataType="Struct" type="Duality.Vector3" />
-                  <velAbs dataType="Struct" type="Duality.Vector3" />
                 </item>
                 <item dataType="Struct" type="Duality.Components.SoundListener" id="1001554546">
                   <active dataType="Bool">true</active>
@@ -491,56 +450,11 @@
               <_items dataType="Array" type="Duality.Component[]" id="825277696" length="4">
                 <item dataType="Struct" type="Duality.Components.Transform" id="1100352694">
                   <active dataType="Bool">true</active>
-                  <angle dataType="Float">0</angle>
-                  <angleAbs dataType="Float">0</angleAbs>
-                  <angleVel dataType="Float">0</angleVel>
-                  <angleVelAbs dataType="Float">0</angleVelAbs>
-                  <deriveAngle dataType="Bool">true</deriveAngle>
                   <gameobj dataType="ObjectRef">3035005058</gameobj>
-                  <ignoreParent dataType="Bool">false</ignoreParent>
-                  <parentTransform dataType="ObjectRef">2226628017</parentTransform>
-                  <pos dataType="Struct" type="Duality.Vector3" />
-                  <posAbs dataType="Struct" type="Duality.Vector3">
-                    <X dataType="Float">0</X>
-                    <Y dataType="Float">0</Y>
-                    <Z dataType="Float">-250</Z>
-                  </posAbs>
-                  <scale dataType="Float">1</scale>
-                  <scaleAbs dataType="Float">1</scaleAbs>
-                  <vel dataType="Struct" type="Duality.Vector3" />
-                  <velAbs dataType="Struct" type="Duality.Vector3" />
                 </item>
                 <item dataType="Struct" type="Duality.Components.Camera" id="3572280865">
                   <active dataType="Bool">true</active>
-                  <farZ dataType="Float">10000</farZ>
-                  <focusDist dataType="Float">500</focusDist>
                   <gameobj dataType="ObjectRef">3035005058</gameobj>
-                  <nearZ dataType="Float">0</nearZ>
-                  <passes dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Components.Camera+Pass]]" id="2733337733">
-                    <_items dataType="Array" type="Duality.Components.Camera+Pass[]" id="105254742" length="4">
-                      <item dataType="Struct" type="Duality.Components.Camera+Pass" id="3482621472">
-                        <clearColor dataType="Struct" type="Duality.Drawing.ColorRgba" />
-                        <clearDepth dataType="Float">1</clearDepth>
-                        <clearFlags dataType="Enum" type="Duality.Drawing.ClearFlag" name="All" value="3" />
-                        <input />
-                        <matrixMode dataType="Enum" type="Duality.Drawing.RenderMatrix" name="PerspectiveWorld" value="0" />
-                        <output dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.RenderTarget]]" />
-                        <visibilityMask dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="AllGroups" value="2147483647" />
-                      </item>
-                      <item dataType="Struct" type="Duality.Components.Camera+Pass" id="4125246350">
-                        <clearColor dataType="Struct" type="Duality.Drawing.ColorRgba" />
-                        <clearDepth dataType="Float">1</clearDepth>
-                        <clearFlags dataType="Enum" type="Duality.Drawing.ClearFlag" name="None" value="0" />
-                        <input />
-                        <matrixMode dataType="Enum" type="Duality.Drawing.RenderMatrix" name="OrthoScreen" value="1" />
-                        <output dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.RenderTarget]]" />
-                        <visibilityMask dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="All" value="4294967295" />
-                      </item>
-                    </_items>
-                    <_size dataType="Int">2</_size>
-                  </passes>
-                  <perspective dataType="Enum" type="Duality.Drawing.PerspectiveMode" name="Parallax" value="1" />
-                  <visibilityMask dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="All" value="4294967295" />
                 </item>
               </_items>
               <_size dataType="Int">2</_size>
@@ -575,115 +489,13 @@
       </children>
       <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="1567604320">
         <_items dataType="Array" type="Duality.Component[]" id="3530805733" length="4">
-          <item dataType="ObjectRef">2226628017</item>
+          <item dataType="Struct" type="Duality.Components.Transform" id="2226628017">
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">4161280381</gameobj>
+          </item>
           <item dataType="Struct" type="Game.CameraController" id="3952418256">
             <active dataType="Bool">true</active>
-            <camera dataType="ObjectRef">3572280865</camera>
-            <followTargets dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Components.Transform]]" id="1787598934">
-              <_items dataType="Array" type="Duality.Components.Transform[]" id="3247707168" length="4">
-                <item dataType="Struct" type="Duality.Components.Transform" id="2625074271">
-                  <active dataType="Bool">true</active>
-                  <gameobj dataType="Struct" type="Duality.GameObject" id="264759339">
-                    <active dataType="Bool">true</active>
-                    <children />
-                    <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="3407648486">
-                      <_items dataType="Array" type="Duality.Component[]" id="3959391616" length="8">
-                        <item dataType="ObjectRef">2625074271</item>
-                        <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="3327535863">
-                          <active dataType="Bool">true</active>
-                          <gameobj dataType="ObjectRef">264759339</gameobj>
-                        </item>
-                        <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.ActorRenderer" id="194524199">
-                          <active dataType="Bool">true</active>
-                          <gameobj dataType="ObjectRef">264759339</gameobj>
-                        </item>
-                        <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.ActorAnimator" id="1495866229">
-                          <active dataType="Bool">true</active>
-                          <gameobj dataType="ObjectRef">264759339</gameobj>
-                        </item>
-                        <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.CharacterController" id="1787928918">
-                          <active dataType="Bool">true</active>
-                          <gameobj dataType="ObjectRef">264759339</gameobj>
-                        </item>
-                      </_items>
-                      <_size dataType="Int">5</_size>
-                    </compList>
-                    <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="2593175866" surrogate="true">
-                      <header />
-                      <body>
-                        <keys dataType="Array" type="System.Object[]" id="549832020">
-                          <item dataType="ObjectRef">2060286638</item>
-                          <item dataType="Type" id="4212791012" value="Duality.Samples.Tilemaps.RpgLike.ActorRenderer" />
-                          <item dataType="ObjectRef">3288038912</item>
-                          <item dataType="Type" id="923252246" value="Duality.Samples.Tilemaps.RpgLike.CharacterController" />
-                          <item dataType="Type" id="572854496" value="Duality.Samples.Tilemaps.RpgLike.ActorAnimator" />
-                        </keys>
-                        <values dataType="Array" type="System.Object[]" id="443220406">
-                          <item dataType="ObjectRef">2625074271</item>
-                          <item dataType="ObjectRef">194524199</item>
-                          <item dataType="ObjectRef">3327535863</item>
-                          <item dataType="ObjectRef">1787928918</item>
-                          <item dataType="ObjectRef">1495866229</item>
-                        </values>
-                      </body>
-                    </compMap>
-                    <compTransform dataType="ObjectRef">2625074271</compTransform>
-                    <identifier dataType="Struct" type="System.Guid" surrogate="true">
-                      <header>
-                        <data dataType="Array" type="System.Byte[]" id="3776775792">FaVN64oHbE2IyePKYOnJUg==</data>
-                      </header>
-                      <body />
-                    </identifier>
-                    <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                    <name dataType="String">MainChar</name>
-                    <parent />
-                    <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="82027622">
-                      <changes dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Resources.PrefabLink+VarMod]]" id="4166521600">
-                        <_items dataType="Array" type="Duality.Resources.PrefabLink+VarMod[]" id="2694081180" length="4">
-                          <item dataType="Struct" type="Duality.Resources.PrefabLink+VarMod">
-                            <childIndex dataType="Struct" type="System.Collections.Generic.List`1[[System.Int32]]" id="957859016">
-                              <_items dataType="Array" type="System.Int32[]" id="4060635756"></_items>
-                              <_size dataType="Int">0</_size>
-                            </childIndex>
-                            <componentType dataType="ObjectRef">4212791012</componentType>
-                            <prop dataType="MemberInfo" id="481503966" value="P:Duality.Samples.Tilemaps.RpgLike.ActorRenderer:SharedMaterial" />
-                            <val dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
-                              <contentPath dataType="String">Data\Graphics\character.Material.res</contentPath>
-                            </val>
-                          </item>
-                          <item dataType="Struct" type="Duality.Resources.PrefabLink+VarMod">
-                            <childIndex dataType="Struct" type="System.Collections.Generic.List`1[[System.Int32]]" id="1058466100">
-                              <_items dataType="ObjectRef">4060635756</_items>
-                              <_size dataType="Int">0</_size>
-                            </childIndex>
-                            <componentType dataType="ObjectRef">4212791012</componentType>
-                            <prop dataType="MemberInfo" id="551337762" value="P:Duality.Samples.Tilemaps.RpgLike.ActorRenderer:Rect" />
-                            <val dataType="Struct" type="Duality.Rect">
-                              <H dataType="Float">32</H>
-                              <W dataType="Float">32</W>
-                              <X dataType="Float">-16</X>
-                              <Y dataType="Float">-24</Y>
-                            </val>
-                          </item>
-                        </_items>
-                        <_size dataType="Int">2</_size>
-                      </changes>
-                      <obj dataType="ObjectRef">264759339</obj>
-                      <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
-                        <contentPath dataType="String">Data\MainChar.Prefab.res</contentPath>
-                      </prefab>
-                    </prefabLink>
-                  </gameobj>
-                </item>
-              </_items>
-              <_size dataType="Int">1</_size>
-            </followTargets>
             <gameobj dataType="ObjectRef">4161280381</gameobj>
-            <maxZoomOutDist dataType="Float">350</maxZoomOutDist>
-            <microphone dataType="ObjectRef">1001554546</microphone>
-            <smoothness dataType="Float">1</smoothness>
-            <zoom dataType="Float">2</zoom>
-            <zoomOutScale dataType="Float">1</zoomOutScale>
           </item>
         </_items>
         <_size dataType="Int">2</_size>
@@ -711,9 +523,108 @@
       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
       <name dataType="String">Camera</name>
       <parent />
-      <prefabLink />
+      <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="977554934">
+        <changes />
+        <obj dataType="ObjectRef">4161280381</obj>
+        <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
+          <contentPath dataType="String">Data\Camera.Prefab.res</contentPath>
+        </prefab>
+      </prefabLink>
     </item>
-    <item dataType="ObjectRef">264759339</item>
+    <item dataType="Struct" type="Duality.GameObject" id="264759339">
+      <active dataType="Bool">true</active>
+      <children />
+      <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="649268569">
+        <_items dataType="Array" type="Duality.Component[]" id="3789890510" length="8">
+          <item dataType="Struct" type="Duality.Components.Transform" id="2625074271">
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">264759339</gameobj>
+          </item>
+          <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="3327535863">
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">264759339</gameobj>
+          </item>
+          <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.ActorRenderer" id="194524199">
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">264759339</gameobj>
+          </item>
+          <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.ActorAnimator" id="1495866229">
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">264759339</gameobj>
+          </item>
+          <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.CharacterController" id="1787928918">
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">264759339</gameobj>
+          </item>
+        </_items>
+        <_size dataType="Int">5</_size>
+      </compList>
+      <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="494667776" surrogate="true">
+        <header />
+        <body>
+          <keys dataType="Array" type="System.Object[]" id="3815651187">
+            <item dataType="ObjectRef">2060286638</item>
+            <item dataType="Type" id="1001023782" value="Duality.Samples.Tilemaps.RpgLike.ActorRenderer" />
+            <item dataType="ObjectRef">3288038912</item>
+            <item dataType="Type" id="1800317626" value="Duality.Samples.Tilemaps.RpgLike.CharacterController" />
+            <item dataType="Type" id="3683246630" value="Duality.Samples.Tilemaps.RpgLike.ActorAnimator" />
+          </keys>
+          <values dataType="Array" type="System.Object[]" id="1392029624">
+            <item dataType="ObjectRef">2625074271</item>
+            <item dataType="ObjectRef">194524199</item>
+            <item dataType="ObjectRef">3327535863</item>
+            <item dataType="ObjectRef">1787928918</item>
+            <item dataType="ObjectRef">1495866229</item>
+          </values>
+        </body>
+      </compMap>
+      <compTransform dataType="ObjectRef">2625074271</compTransform>
+      <identifier dataType="Struct" type="System.Guid" surrogate="true">
+        <header>
+          <data dataType="Array" type="System.Byte[]" id="2462471321">FaVN64oHbE2IyePKYOnJUg==</data>
+        </header>
+        <body />
+      </identifier>
+      <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
+      <name dataType="String">MainChar</name>
+      <parent />
+      <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2486268699">
+        <changes dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Resources.PrefabLink+VarMod]]" id="1392921812">
+          <_items dataType="Array" type="Duality.Resources.PrefabLink+VarMod[]" id="2723398372" length="4">
+            <item dataType="Struct" type="Duality.Resources.PrefabLink+VarMod">
+              <childIndex dataType="Struct" type="System.Collections.Generic.List`1[[System.Int32]]" id="1228921032">
+                <_items dataType="Array" type="System.Int32[]" id="871250540"></_items>
+                <_size dataType="Int">0</_size>
+              </childIndex>
+              <componentType dataType="ObjectRef">1001023782</componentType>
+              <prop dataType="MemberInfo" id="2838061790" value="P:Duality.Samples.Tilemaps.RpgLike.ActorRenderer:SharedMaterial" />
+              <val dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
+                <contentPath dataType="String">Data\Graphics\character.Material.res</contentPath>
+              </val>
+            </item>
+            <item dataType="Struct" type="Duality.Resources.PrefabLink+VarMod">
+              <childIndex dataType="Struct" type="System.Collections.Generic.List`1[[System.Int32]]" id="1254812980">
+                <_items dataType="ObjectRef">871250540</_items>
+                <_size dataType="Int">0</_size>
+              </childIndex>
+              <componentType dataType="ObjectRef">1001023782</componentType>
+              <prop dataType="MemberInfo" id="3580305186" value="P:Duality.Samples.Tilemaps.RpgLike.ActorRenderer:Rect" />
+              <val dataType="Struct" type="Duality.Rect">
+                <H dataType="Float">32</H>
+                <W dataType="Float">32</W>
+                <X dataType="Float">-16</X>
+                <Y dataType="Float">-24</Y>
+              </val>
+            </item>
+          </_items>
+          <_size dataType="Int">2</_size>
+        </changes>
+        <obj dataType="ObjectRef">264759339</obj>
+        <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
+          <contentPath dataType="String">Data\MainChar.Prefab.res</contentPath>
+        </prefab>
+      </prefabLink>
+    </item>
     <item dataType="Struct" type="Duality.GameObject" id="2876092272">
       <active dataType="Bool">true</active>
       <children />
@@ -1291,7 +1202,7 @@
                 <keys dataType="Array" type="System.Object[]" id="556788120">
                   <item dataType="ObjectRef">2060286638</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="Type" id="3461323820" value="Game.Obstacle" />
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="1371820830">
@@ -1367,7 +1278,7 @@
                 <keys dataType="Array" type="System.Object[]" id="285663926">
                   <item dataType="ObjectRef">2060286638</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3461323820</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="1801472666">
@@ -1443,7 +1354,7 @@
                 <keys dataType="Array" type="System.Object[]" id="1501493696">
                   <item dataType="ObjectRef">2060286638</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3461323820</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="675804238">
@@ -1528,7 +1439,7 @@
                 <keys dataType="Array" type="System.Object[]" id="756124746">
                   <item dataType="ObjectRef">2060286638</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3461323820</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="2940329114">
@@ -1613,7 +1524,7 @@
                 <keys dataType="Array" type="System.Object[]" id="326460954">
                   <item dataType="ObjectRef">2060286638</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3461323820</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="3023529274">
@@ -1698,7 +1609,7 @@
                 <keys dataType="Array" type="System.Object[]" id="1173656092">
                   <item dataType="ObjectRef">2060286638</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3461323820</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="3860585494">
@@ -1783,7 +1694,7 @@
                 <keys dataType="Array" type="System.Object[]" id="676473007">
                   <item dataType="ObjectRef">2060286638</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3461323820</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="3415468192">
@@ -1868,7 +1779,7 @@
                 <keys dataType="Array" type="System.Object[]" id="3503237476">
                   <item dataType="ObjectRef">2060286638</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3461323820</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="340869654">
@@ -1953,7 +1864,7 @@
                 <keys dataType="Array" type="System.Object[]" id="1614522874">
                   <item dataType="ObjectRef">2060286638</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3461323820</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="3391508794">
@@ -2038,7 +1949,7 @@
                 <keys dataType="Array" type="System.Object[]" id="3374165573">
                   <item dataType="ObjectRef">2060286638</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3461323820</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="693621800">
@@ -2123,7 +2034,7 @@
                 <keys dataType="Array" type="System.Object[]" id="1064964197">
                   <item dataType="ObjectRef">2060286638</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3461323820</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="197556840">
@@ -2217,7 +2128,7 @@
                 <keys dataType="Array" type="System.Object[]" id="3420279075">
                   <item dataType="ObjectRef">2060286638</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3461323820</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="688126072">
@@ -2302,7 +2213,7 @@
                 <keys dataType="Array" type="System.Object[]" id="3083324633">
                   <item dataType="ObjectRef">2060286638</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3461323820</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="1859501568">
@@ -2424,10 +2335,10 @@
               <body>
                 <keys dataType="Array" type="System.Object[]" id="3644822410">
                   <item dataType="ObjectRef">2060286638</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">923252246</item>
-                  <item dataType="ObjectRef">572854496</item>
+                  <item dataType="ObjectRef">1800317626</item>
+                  <item dataType="ObjectRef">3683246630</item>
                   <item dataType="Type" id="2648862688" value="Game.NotAnEnemy" />
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="1307201818">
@@ -2521,10 +2432,10 @@
               <body>
                 <keys dataType="Array" type="System.Object[]" id="104901990">
                   <item dataType="ObjectRef">2060286638</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">923252246</item>
-                  <item dataType="ObjectRef">572854496</item>
+                  <item dataType="ObjectRef">1800317626</item>
+                  <item dataType="ObjectRef">3683246630</item>
                   <item dataType="ObjectRef">2648862688</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="760146746">
@@ -2618,10 +2529,10 @@
               <body>
                 <keys dataType="Array" type="System.Object[]" id="2839541224">
                   <item dataType="ObjectRef">2060286638</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">923252246</item>
-                  <item dataType="ObjectRef">572854496</item>
+                  <item dataType="ObjectRef">1800317626</item>
+                  <item dataType="ObjectRef">3683246630</item>
                   <item dataType="ObjectRef">2648862688</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="3832005406">
@@ -2715,10 +2626,10 @@
               <body>
                 <keys dataType="Array" type="System.Object[]" id="1213028192">
                   <item dataType="ObjectRef">2060286638</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">923252246</item>
-                  <item dataType="ObjectRef">572854496</item>
+                  <item dataType="ObjectRef">1800317626</item>
+                  <item dataType="ObjectRef">3683246630</item>
                   <item dataType="ObjectRef">2648862688</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="4018204814">
@@ -2812,10 +2723,10 @@
               <body>
                 <keys dataType="Array" type="System.Object[]" id="2444151519">
                   <item dataType="ObjectRef">2060286638</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">923252246</item>
-                  <item dataType="ObjectRef">572854496</item>
+                  <item dataType="ObjectRef">1800317626</item>
+                  <item dataType="ObjectRef">3683246630</item>
                   <item dataType="ObjectRef">2648862688</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="1506416928">
@@ -2909,10 +2820,10 @@
               <body>
                 <keys dataType="Array" type="System.Object[]" id="128574234">
                   <item dataType="ObjectRef">2060286638</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">923252246</item>
-                  <item dataType="ObjectRef">572854496</item>
+                  <item dataType="ObjectRef">1800317626</item>
+                  <item dataType="ObjectRef">3683246630</item>
                   <item dataType="ObjectRef">2648862688</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="2121875770">
@@ -3006,10 +2917,10 @@
               <body>
                 <keys dataType="Array" type="System.Object[]" id="920459976">
                   <item dataType="ObjectRef">2060286638</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">923252246</item>
-                  <item dataType="ObjectRef">572854496</item>
+                  <item dataType="ObjectRef">1800317626</item>
+                  <item dataType="ObjectRef">3683246630</item>
                   <item dataType="ObjectRef">2648862688</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="3053520606">
@@ -3103,10 +3014,10 @@
               <body>
                 <keys dataType="Array" type="System.Object[]" id="1132525279">
                   <item dataType="ObjectRef">2060286638</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">923252246</item>
-                  <item dataType="ObjectRef">572854496</item>
+                  <item dataType="ObjectRef">1800317626</item>
+                  <item dataType="ObjectRef">3683246630</item>
                   <item dataType="ObjectRef">2648862688</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="3982360864">
@@ -3200,10 +3111,10 @@
               <body>
                 <keys dataType="Array" type="System.Object[]" id="3944038014">
                   <item dataType="ObjectRef">2060286638</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">923252246</item>
-                  <item dataType="ObjectRef">572854496</item>
+                  <item dataType="ObjectRef">1800317626</item>
+                  <item dataType="ObjectRef">3683246630</item>
                   <item dataType="ObjectRef">2648862688</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="3688793738">
@@ -3297,10 +3208,10 @@
               <body>
                 <keys dataType="Array" type="System.Object[]" id="3852766239">
                   <item dataType="ObjectRef">2060286638</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">923252246</item>
-                  <item dataType="ObjectRef">572854496</item>
+                  <item dataType="ObjectRef">1800317626</item>
+                  <item dataType="ObjectRef">3683246630</item>
                   <item dataType="ObjectRef">2648862688</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="495263776">
@@ -3394,10 +3305,10 @@
               <body>
                 <keys dataType="Array" type="System.Object[]" id="1062501101">
                   <item dataType="ObjectRef">2060286638</item>
-                  <item dataType="ObjectRef">4212791012</item>
+                  <item dataType="ObjectRef">1001023782</item>
                   <item dataType="ObjectRef">3288038912</item>
-                  <item dataType="ObjectRef">923252246</item>
-                  <item dataType="ObjectRef">572854496</item>
+                  <item dataType="ObjectRef">1800317626</item>
+                  <item dataType="ObjectRef">3683246630</item>
                   <item dataType="ObjectRef">2648862688</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="127664376">
