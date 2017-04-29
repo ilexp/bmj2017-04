@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NotAnEnemy.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="CorePlugin.cs" />
     <Compile Include="CameraController.cs" />
