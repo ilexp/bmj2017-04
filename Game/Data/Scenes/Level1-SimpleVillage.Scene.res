@@ -50,7 +50,7 @@
                   <tileData dataType="Struct" type="Duality.Plugins.Tilemaps.TilemapData" id="2621886698" custom="true">
                     <body>
                       <version dataType="Int">3</version>
-                      <data dataType="Array" type="System.Byte[]" id="2387928352">H4sIAAAAAAAEALVXu21CQRB8Jn0kSE7IkFyGcxqgCJfggIAGaIFKkEUHdACEZLgFW+wlg0bL7LKHBKOH3t3N7P8WwzC8/3/fhvunwRSePFg5kH2zI0wApvCEb87uv0uDYwlsqZGzdqGs258jU4vHGqUvg4PB3uBThrXBxmBH7ZnVR2OQOs7xX9P3I5yApoNdvps+epCuT88qAUDfTl+HJIRddH3UgjX66LECs6yVwkB9qzOr0YckPD/U+OhFfTVRjklZI0xwQEd9I8ACFoRLUINw7TFKV6pPiFaqj5J/0Q/gjrPci28Gv6X6aB2klo9OF7dkg24wzxo5Wz+j08W6Y2kO6xNquTBd4GZegNG0QBLZIUr3X7a6TaIEsxWMLu+vbyzR573ilWaPp1eeSuceHLr75d8pqu/q6ROySshbPT6f67vITeqhO1FK3v2IOs67LYVDGOLzI9mWHrpTKTPB7zhnld7OKHiz6R/IgdtpiBEAAA==</data>
+                      <data dataType="Array" type="System.Byte[]" id="2387928352">H4sIAAAAAAAEALWXMU4DUQxEF9pNg0RDF4lj0COFlMBuFVJyBIoUXIAr5CQoyg24AVCmC1cAxW5m9eT4Lz9IMAr62e/x2GPvtGmay7/fs+bw4zCRTxEsDHqDJ4Pl8ZNdcPKEcC4wkU968uLw99bgowq8YZJnBncC8zQV/GdLbPVaC+nZYGvwbnCThpXBq8Ea83lv0As8HueHNYjCBfo5v03iBk2dPOXF+eFFzu/BoAv45bsqAcJvjUcSlZV4ivett7brh32LGazDb0bBa2W5AJr5BL86gNqqAFHmnUonRxLeqk/RICId6mikUUeZR351qlybEolhIyScVgVYyn3F/NCskF8rMKWnRBakE9ZVKfYeC2mH/DB12KLKD4NPAFqQqmI3fKVn8d7gxyNbCD80OXWbOfFDH8TMl24X+5ED2uEq38xqo2P9s3S7WJ3QmrGIpGwG/CIvJ903kZsmtjxsCw1i7JKY18/lR92xtbXY0YJwC0K22H89fSHyz2jeRvz8dlxqWgkwvwVFucaFPKFfNG8jfv/sHF26o5PRoMXalTg/cd5qhUjf7iJ+ia6KAF8O+gBwdgi/7/SQGkwnDCl6P0Lhorel4hKW+rweOZYG06lqZAnddc+q+naGEI2JXwBLiUCIEQAA</data>
                     </body>
                   </tileData>
                   <tileset dataType="Struct" type="Duality.ContentRef`1[[Duality.Plugins.Tilemaps.Tileset]]">
@@ -132,7 +132,7 @@
                   <tileData dataType="Struct" type="Duality.Plugins.Tilemaps.TilemapData" id="2747091481" custom="true">
                     <body>
                       <version dataType="Int">3</version>
-                      <data dataType="Array" type="System.Byte[]" id="3200326990">H4sIAAAAAAAEAFNgYGAQYRjMwBNCBaNQ3gPjllEwCgYlgGYSb2yCgzfnoDpwMLlsFJANBmE0Ys0I9E51WLPoKBiiYDQa0QCFyZvCumpgq7qBzdqjSREGhnR7Yhg5His1CkbB8AC0aE4CAB+K5OmIEQAA</data>
+                      <data dataType="Array" type="System.Byte[]" id="3200326990">H4sIAAAAAAAEAFNgYGAQYRjMwAsPNQpGAflgGKWsoen44RDywwHgywijsUI6wBp0Iys8R4g3RwEMUJi8KSx7BrboGipZe7RkH2BAREU7GjmjYBSMOAAAqAVjA4gRAAA=</data>
                     </body>
                   </tileData>
                   <tileset dataType="Struct" type="Duality.ContentRef`1[[Duality.Plugins.Tilemaps.Tileset]]">
@@ -318,8 +318,8 @@
                   <gameobj dataType="ObjectRef">2237435948</gameobj>
                   <origin dataType="Enum" type="Duality.Alignment" name="Center" value="0" />
                   <roundedCorners dataType="Bool">true</roundedCorners>
-                  <shapeFriction dataType="Float">0.3</shapeFriction>
-                  <shapeRestitution dataType="Float">0.3</shapeRestitution>
+                  <shapeFriction dataType="Float">0.300000161</shapeFriction>
+                  <shapeRestitution dataType="Float">0.300000161</shapeRestitution>
                   <solidOuterEdges dataType="Bool">true</solidOuterEdges>
                   <source dataType="Array" type="Duality.Plugins.Tilemaps.TilemapCollisionSource[]" id="1183168327">
                     <item dataType="Struct" type="Duality.Plugins.Tilemaps.TilemapCollisionSource">

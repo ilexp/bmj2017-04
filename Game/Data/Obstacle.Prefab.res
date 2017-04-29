@@ -44,12 +44,12 @@
           <colWith dataType="Enum" type="Duality.Components.Physics.CollisionCategory" name="All" value="2147483647" />
           <continous dataType="Bool">false</continous>
           <explicitInertia dataType="Float">0</explicitInertia>
-          <explicitMass dataType="Float">15</explicitMass>
+          <explicitMass dataType="Float">35</explicitMass>
           <fixedAngle dataType="Bool">true</fixedAngle>
           <gameobj dataType="ObjectRef">118080788</gameobj>
           <ignoreGravity dataType="Bool">false</ignoreGravity>
           <joints />
-          <linearDamp dataType="Float">5.1</linearDamp>
+          <linearDamp dataType="Float">25</linearDamp>
           <linearVel dataType="Struct" type="Duality.Vector2" />
           <revolutions dataType="Float">0</revolutions>
           <shapes dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Components.Physics.ShapeInfo]]" id="128445180">
