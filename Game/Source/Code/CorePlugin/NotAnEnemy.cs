@@ -15,14 +15,17 @@ using Duality.Samples.Tilemaps.RpgLike;
 
 namespace Game {
 	[RequiredComponent(typeof(CharacterController))]
-	public class NotAnEnemy : Component, ICmpUpdatable, ICmpInitializable {
+	public class NotAnEnemy : Component, ICmpUpdatable, ICmpInitializable, ICmpCollisionListener {
 		private Vector2 targetPos;
 		private MovementPath travelPath;
 		private int waypointIndex;
 		private bool walkBackwards;
 		private bool carriesStuff = true;
 		private float walkSpeed = 1.0f;
+		private float lastHitTime = 0.0f;
 		private ContentRef<Prefab> scoreText = null;
+		private ContentRef<Sound> scoreSound = null;
+		private ContentRef<Sound> hitSound = null;
 		private double hitAnimationStart = -6d;
 		private double hitAnimationDuration = 0.5d;
 		private int hitAnimationBlinkrate = 10;
@@ -42,6 +45,16 @@ namespace Game {
 			get { return this.scoreText; }
 			set { this.scoreText = value; }
 		}
+		public ContentRef<Sound> ScoreSound
+		{
+			get { return this.scoreSound; }
+			set { this.scoreSound = value; }
+		}
+		public ContentRef<Sound> HitSound
+		{
+			get { return this.hitSound; }
+			set { this.hitSound = value; }
+		}
 
 		public double HitAnimationDuration {
 			get { return hitAnimationDuration; }
@@ -59,6 +72,7 @@ namespace Game {
 			scoreObj.Transform.Pos = this.GameObj.Transform.Pos - Vector3.UnitY * 100;
 			text.Text = string.Format("+ {0}", MathF.Rnd.Next(1, 4) * 100);
 			this.GameObj.ParentScene.AddObject(scoreObj);
+			DualityApp.Sound.PlaySound(this.scoreSound);
 		}
 
 		void ICmpUpdatable.OnUpdate() {
@@ -153,10 +167,11 @@ namespace Game {
 		}
 
 		private void HitNotAnEnemy() {
+			DualityApp.Sound.PlaySound(this.hitSound);
 			this.carriesStuff = false;
 			// Turn around if walking to target
 			if (walkBackwards == false) {
-				this.waypointIndex -= 1;
+				this.waypointIndex = MathF.Max(this.waypointIndex - 1, 0);
 				walkBackwards = true;
 			}
 		}
@@ -169,5 +184,23 @@ namespace Game {
 			}
 		}
 		void ICmpInitializable.OnShutdown(ShutdownContext context) { }
+
+		void ICmpCollisionListener.OnCollisionBegin(Component sender, CollisionEventArgs args) { }
+		void ICmpCollisionListener.OnCollisionEnd(Component sender, CollisionEventArgs args) { }
+		void ICmpCollisionListener.OnCollisionSolve(Component sender, CollisionEventArgs args)
+		{
+			RigidBodyCollisionEventArgs bodyArgs = args as RigidBodyCollisionEventArgs;
+			if (bodyArgs.OtherShape.Parent.BodyType == BodyType.Static) return;
+
+			float time = (float)Time.GameTimer.TotalSeconds;
+			if (time - this.lastHitTime < 0.5f)
+				return;
+
+			this.lastHitTime = time;
+			if (args.CollisionData.NormalImpulse > 50.0f)
+			{
+				this.HitNotAnEnemy();
+			}
+		}
 	}
 }

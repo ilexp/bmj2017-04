@@ -176,7 +176,18 @@
         <item dataType="Struct" type="Game.NotAnEnemy" id="4227051147">
           <active dataType="Bool">true</active>
           <carriesStuff dataType="Bool">true</carriesStuff>
+          <carryType dataType="Int">2</carryType>
           <gameobj dataType="ObjectRef">185256559</gameobj>
+          <hitAnimationBlinkframes dataType="Int">0</hitAnimationBlinkframes>
+          <hitAnimationBlinkrate dataType="Int">10</hitAnimationBlinkrate>
+          <hitAnimationDuration dataType="Double">0.5</hitAnimationDuration>
+          <hitAnimationStart dataType="Double">-6</hitAnimationStart>
+          <hitSound dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Sound]]">
+            <contentPath dataType="String">Data\Audio\HitProtagonist.Sound.res</contentPath>
+          </hitSound>
+          <scoreSound dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Sound]]">
+            <contentPath dataType="String">Data\Audio\Score.Sound.res</contentPath>
+          </scoreSound>
           <scoreText dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
             <contentPath dataType="String">Data\FloatingText.Prefab.res</contentPath>
           </scoreText>
