@@ -33,8 +33,9 @@ namespace Game
 			Vector2 diffToTarget = this.targetPos - transform.Pos.Xy;
 			Vector2 directionToTarget = diffToTarget.Normalized;
 			float targetDistance = diffToTarget.Length;
+			float movementSpeed = MathF.Clamp(targetDistance / 64.0f, 0.0f, 1.0f);
 
-			character.TargetMovement = directionToTarget;
+			character.TargetMovement = directionToTarget * movementSpeed;
 		}
 	}
 }
