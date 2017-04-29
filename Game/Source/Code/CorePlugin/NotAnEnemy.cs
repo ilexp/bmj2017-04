@@ -147,6 +147,8 @@ namespace Game {
 			animator.Animations[1].DirectionMap[1].SpriteSheetIndex = this.carriesStuff ? 2 + this.carryType : 1;
 			animator.Animations[1].DirectionMap[2].SpriteSheetIndex = this.carriesStuff ? 2 + this.carryType : 1;
 			animator.Animations[1].DirectionMap[3].SpriteSheetIndex = this.carriesStuff ? 2 + this.carryType : 1;
+			float redShift = MathF.Clamp(1.0f - (((float)Time.GameTimer.TotalSeconds - this.lastHitTime) / 0.5f), 0.0f, 1.0f);
+			renderer.ColorTint = ColorRgba.Lerp(ColorRgba.White, ColorRgba.Red, redShift);
 
 			character.TargetMovement = movementDirection * movementSpeed;
 
@@ -200,6 +202,9 @@ namespace Game {
 			if (args.CollisionData.NormalImpulse > 50.0f)
 			{
 				this.HitNotAnEnemy();
+
+				RigidBody other = bodyArgs.OtherShape.Parent;
+				other.ApplyWorldImpulse(args.CollisionData.Normal * 1000);
 			}
 		}
 	}
