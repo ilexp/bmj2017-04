@@ -24,9 +24,12 @@ namespace Game {
 
 		void ICmpUpdatable.OnUpdate() {
 			if (this.character == null) return;
-			if (DualityApp.Keyboard.KeyHit(Key.Q)) {
+			if (DualityApp.Keyboard.KeyHit(Key.Q) || DualityApp.Gamepads.Any((arg) => arg.ButtonHit(GamepadButton.A))) {
 				GrabObjects();
-			}	
+			}
+			if (DualityApp.Keyboard.KeyReleased(Key.Q) || DualityApp.Gamepads.Any((arg) => arg.ButtonReleased(GamepadButton.A))) {
+				DropObjects();
+			}
 
 			// Keyboard character controls using WASD
 			Vector2 movement = Vector2.Zero;
@@ -59,6 +62,13 @@ namespace Game {
 			this.character.TargetMovement = movement;
 		}
 
+		void DropObjects() {
+			foreach (var item in jointedThings) {
+				item.ParentBody.RemoveJoint(item);
+			}
+			jointedThings.Clear();
+		}
+
 		private void GrabObjects() {
 			var playerPosition = character.GameObj.Transform.Pos;
 			VisualLog.Default.DrawPoint(playerPosition).WithOffset(-100);
@@ -75,6 +85,7 @@ namespace Game {
 						distJoint.Frequency = 2;
 						distJoint.CollideConnected = true;
 						rb.AddJoint(distJoint, item);
+						jointedThings.Add(distJoint);
 					}
 				}
 			}
