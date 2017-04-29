@@ -50,7 +50,7 @@
                   <tileData dataType="Struct" type="Duality.Plugins.Tilemaps.TilemapData" id="2621886698" custom="true">
                     <body>
                       <version dataType="Int">3</version>
-                      <data dataType="Array" type="System.Byte[]" id="2387928352">H4sIAAAAAAAEAO2W3Q3AIAiE6QhNOkD36v571PTZkAM8IVYTcy/+8IGAt4hcbR7yDbM8inhXjtkXlJMgmy+Lj3hKCb7utYBluXy4ZUQ+omw+lW9aFmuO1EzSNmh8QDRL8HnrS0G+YOcy83Wv9XqXL14n46cEwxF8u/z44dnP6KLeDP8XHx7+2Xxj8s/Ll/QTMJft1fmI1TtJVucL9hxcXiFk9YGIEQAA</data>
+                      <data dataType="Array" type="System.Byte[]" id="2387928352">H4sIAAAAAAAEALVXuw3CMBQMtEmDREOHxBj0LMAQjEBBwQKskEkQYgM2AEo6WAEUuzl0epwfz0jhlMix794/86Zppp9r1Ay/DB3cWbA2wLuyIowBOrjDlZPhf5XgEgIHamSvXSjr/LBlavHYRGmT4JzgmGApwy7BPkFP7enVR2OQOs7wX9Z3Ek5A08Eu26yPHqTr07NKANDX6+8hCWEXXR+1YIw+eqzAzGulYqC+1ZnF6EMSlh9ifPSnvpgox6SMESY4oKK+FoBWKZ3nmu0iM3tQfUK0Un2U/J9+AHfc5F78TPAK1UfrILV86XTxdDboDDOvkb31s3S62FUszcX6hFouTBe4mRVgNC2QhHeI0v3nrW7jUoLeCkZfr6+vDdFnLbFKs8XTKk+hcw8O3fXy71qq72HpE7JKyFs9Pn/ru8tN6qs7UUrW9xF1nPW1VBzCEJ8LZ1v66k6hzAS/W3NWDbBm0zcXq9wTiBEAAA==</data>
                     </body>
                   </tileData>
                   <tileset dataType="Struct" type="Duality.ContentRef`1[[Duality.Plugins.Tilemaps.Tileset]]">
@@ -132,7 +132,7 @@
                   <tileData dataType="Struct" type="Duality.Plugins.Tilemaps.TilemapData" id="2747091481" custom="true">
                     <body>
                       <version dataType="Int">3</version>
-                      <data dataType="Array" type="System.Byte[]" id="3200326990">H4sIAAAAAAAEAO3BMQEAAAjAoIUwgP1TmsIP2GoCAAAA4NsBd4sGdogRAAA=</data>
+                      <data dataType="Array" type="System.Byte[]" id="3200326990">H4sIAAAAAAAEAFNgYGAQYRjMwBNCBaNQ3gPjllEwCgYlgGYSb2yCgzfnoDpwMLlsFJANBmE0Ys0I9E51WLPoKBiiYDQa0QCFyZvCumpgq7qBzdqjSREGhnR7Yhg5His1CkbB8AC0aE4CAB+K5OmIEQAA</data>
                     </body>
                   </tileData>
                   <tileset dataType="Struct" type="Duality.ContentRef`1[[Duality.Plugins.Tilemaps.Tileset]]">
@@ -309,7 +309,7 @@
                   <linearVel dataType="Struct" type="Duality.Vector2" />
                   <revolutions dataType="Float">0</revolutions>
                   <shapes dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Components.Physics.ShapeInfo]]" id="1021896400">
-                    <_items dataType="Array" type="Duality.Components.Physics.ShapeInfo[]" id="269067964" length="16" />
+                    <_items dataType="Array" type="Duality.Components.Physics.ShapeInfo[]" id="269067964" length="32" />
                     <_size dataType="Int">0</_size>
                   </shapes>
                 </item>
