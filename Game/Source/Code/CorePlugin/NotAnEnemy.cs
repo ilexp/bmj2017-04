@@ -15,7 +15,7 @@ using Duality.Samples.Tilemaps.RpgLike;
 
 namespace Game {
 	[RequiredComponent(typeof(CharacterController))]
-	public class NotAnEnemy : Component, ICmpUpdatable {
+	public class NotAnEnemy : Component, ICmpUpdatable, ICmpInitializable {
 		private Vector2 targetPos;
 		private MovementPath travelPath;
 		private int waypointIndex;
@@ -27,6 +27,7 @@ namespace Game {
 		private double hitAnimationDuration = 0.5d;
 		private int hitAnimationBlinkrate = 10;
 		private int hitAnimationBlinkframes = 0;
+		private int carryType = 0;
 
 
 		public Vector2 TargetPos {
@@ -111,6 +112,7 @@ namespace Game {
 					if (this.waypointIndex < 0) {
 						this.walkBackwards = false;
 						this.carriesStuff = true;
+						this.carryType = MathF.Rnd.Next(5);
 						this.waypointIndex += 2;
 					}
 				} else {
@@ -126,7 +128,11 @@ namespace Game {
 
 			// Color the guy green
 			ActorRenderer renderer = this.GameObj.GetComponent<ActorRenderer>();
-			renderer.ColorTint = this.carriesStuff ? ColorRgba.Green : ColorRgba.White;
+			ActorAnimator animator = this.GameObj.GetComponent<ActorAnimator>();
+			animator.Animations[1].DirectionMap[0].SpriteSheetIndex = this.carriesStuff ? 2 + this.carryType : 1;
+			animator.Animations[1].DirectionMap[1].SpriteSheetIndex = this.carriesStuff ? 2 + this.carryType : 1;
+			animator.Animations[1].DirectionMap[2].SpriteSheetIndex = this.carriesStuff ? 2 + this.carryType : 1;
+			animator.Animations[1].DirectionMap[3].SpriteSheetIndex = this.carriesStuff ? 2 + this.carryType : 1;
 
 			character.TargetMovement = movementDirection * movementSpeed;
 
@@ -154,5 +160,14 @@ namespace Game {
 				walkBackwards = true;
 			}
 		}
+
+		void ICmpInitializable.OnInit(InitContext context)
+		{
+			if (context == InitContext.Activate)
+			{
+				this.carryType = MathF.Rnd.Next(5);
+			}
+		}
+		void ICmpInitializable.OnShutdown(ShutdownContext context) { }
 	}
 }

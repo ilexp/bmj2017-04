@@ -15,6 +15,7 @@ namespace Game
 		private SoundListener   microphone     = null;
 		private List<Transform> followTargets  = new List<Transform>();
 		private float           zoomOutScale   = 1.0f;
+		private float           zoom = 1.0f;
 		private float           maxZoomOutDist = 350.0f;
 
 		[DontSerialize] private Vector3 focusPos          = Vector3.Zero;
@@ -39,6 +40,11 @@ namespace Game
 		{
 			get { return this.zoomOutScale; }
 			set { this.zoomOutScale = value; }
+		}
+		public float Zoom
+		{
+			get { return this.zoom; }
+			set { this.zoom = value; }
 		}
 		public Camera Camera
 		{
@@ -69,7 +75,7 @@ namespace Game
 			float zoomThreshold = 200.0f;
 			float zoomOutDistance = this.zoomOutScale * MathF.Max(0, viewRadius - zoomThreshold);
 			zoomOutDistance = MathF.Min(this.maxZoomOutDist, zoomOutDistance);
-			return -new Vector3(0.0f, 0.0f, this.camera.FocusDist + zoomOutDistance);
+			return -new Vector3(0.0f, 0.0f, (this.camera.FocusDist / this.zoom) + zoomOutDistance);
 		}
 
 		void ICmpUpdatable.OnUpdate()
