@@ -95,7 +95,7 @@
             <Y dataType="Float">-16</Y>
           </rect>
           <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
-            <contentPath dataType="String">Data\TilemapsSample\Actors\Barrel.Material.res</contentPath>
+            <contentPath dataType="String">Data\Graphics\fass.Material.res</contentPath>
           </sharedMat>
           <spriteIndex dataType="Int">-1</spriteIndex>
           <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group0" value="1" />
