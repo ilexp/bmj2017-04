@@ -72,6 +72,8 @@ namespace Game {
 						var rb = character.GameObj.GetComponent<RigidBody>();
 						var distJoint = new DistanceJointInfo();
 						distJoint.TargetDistance = 32;
+						distJoint.Frequency = 2;
+						distJoint.CollideConnected = true;
 						rb.AddJoint(distJoint, item);
 					}
 				}
