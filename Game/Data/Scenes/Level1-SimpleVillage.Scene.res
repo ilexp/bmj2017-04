@@ -132,7 +132,7 @@
                   <tileData dataType="Struct" type="Duality.Plugins.Tilemaps.TilemapData" id="2747091481" custom="true">
                     <body>
                       <version dataType="Int">3</version>
-                      <data dataType="Array" type="System.Byte[]" id="3200326990">H4sIAAAAAAAEAFNgYGAQYRjMwAsPNQpGAflgGKWsoen44RDywwHgywijsUI6wBp0Iys8R4g3RwEMUJi8KSx7BrboGipZe7RkH2BAREU7GjmjYBSMOAAAqAVjA4gRAAA=</data>
+                      <data dataType="Array" type="System.Byte[]" id="3200326990">H4sIAAAAAAAEAFNgYGAQYRjMwB5COaBQjgPhklEwvMAwSllQrwwxx6NGwBBz/DACWDMClBqNFdKBA4RCDbqhmUXJBSPEm6MABihM3hTWxQNblQ+VrD1a3w4wwFfRolKjkTMKRsHIAQBOkPdniBEAAA==</data>
                     </body>
                   </tileData>
                   <tileset dataType="Struct" type="Duality.ContentRef`1[[Duality.Plugins.Tilemaps.Tileset]]">
