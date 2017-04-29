@@ -88,7 +88,6 @@ namespace Game {
 			// Find out which waypoint we're travelling to
 			Transform waypoint = this.travelPath.Waypoints[this.waypointIndex];
 			this.targetPos = waypoint.Pos.Xy;
-			VisualLog.Default.DrawPoint(new Vector3(targetPos)).WithOffset(-200).WithColor(ColorRgba.Grey);
 
 			// Adjust walking speed
 			this.walkSpeed += Time.TimeMult * 0.04f * MathF.Rnd.NextFloat(-1.0f, 1.0f);

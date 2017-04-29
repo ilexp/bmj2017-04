@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Teleporter.cs" />
     <Compile Include="MovementPath.cs" />
     <Compile Include="NotAnEnemy.cs" />
     <Compile Include="FloatingText.cs" />

@@ -1,9 +1,6 @@
 ﻿<root dataType="Struct" type="Duality.Resources.Scene" id="129723834">
   <assetInfo />
-  <globalGravity dataType="Struct" type="Duality.Vector2">
-    <X dataType="Float">0</X>
-    <Y dataType="Float">33</Y>
-  </globalGravity>
+  <globalGravity dataType="Struct" type="Duality.Vector2" />
   <serializeObj dataType="Array" type="Duality.GameObject[]" id="427169525">
     <item dataType="Struct" type="Duality.GameObject" id="1520866139">
       <active dataType="Bool">true</active>
@@ -782,13 +779,13 @@
                   <ignoreParent dataType="Bool">false</ignoreParent>
                   <parentTransform />
                   <pos dataType="Struct" type="Duality.Vector3">
-                    <X dataType="Float">52.48717</X>
-                    <Y dataType="Float">-35.844902</Y>
+                    <X dataType="Float">68.64516</X>
+                    <Y dataType="Float">-75.45805</Y>
                     <Z dataType="Float">0</Z>
                   </pos>
                   <posAbs dataType="Struct" type="Duality.Vector3">
-                    <X dataType="Float">52.48717</X>
-                    <Y dataType="Float">-35.844902</Y>
+                    <X dataType="Float">68.64516</X>
+                    <Y dataType="Float">-75.45805</Y>
                     <Z dataType="Float">0</Z>
                   </posAbs>
                   <scale dataType="Float">1</scale>

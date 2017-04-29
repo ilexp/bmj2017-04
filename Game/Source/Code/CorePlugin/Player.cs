@@ -71,7 +71,6 @@ namespace Game {
 
 		private void GrabObjects() {
 			var playerPosition = character.GameObj.Transform.Pos;
-			VisualLog.Default.DrawPoint(playerPosition).WithOffset(-100);
 			var actionSquareSize = new Vector2(32, 32) * 2;
 			var list = RigidBody.QueryRectGlobal(playerPosition.Xy - (actionSquareSize/2) , actionSquareSize);
 			foreach (var item in list) {
