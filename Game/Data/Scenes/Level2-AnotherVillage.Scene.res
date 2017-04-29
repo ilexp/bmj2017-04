@@ -921,7 +921,7 @@
     <item dataType="Struct" type="Duality.GameObject" id="1209101988">
       <active dataType="Bool">true</active>
       <children dataType="Struct" type="System.Collections.Generic.List`1[[Duality.GameObject]]" id="2849758746">
-        <_items dataType="Array" type="Duality.GameObject[]" id="2977841536" length="4">
+        <_items dataType="Array" type="Duality.GameObject[]" id="2977841536" length="8">
           <item dataType="Struct" type="Duality.GameObject" id="4084120761">
             <active dataType="Bool">true</active>
             <children />
@@ -1213,8 +1213,202 @@
               </prefab>
             </prefabLink>
           </item>
+          <item dataType="Struct" type="Duality.GameObject" id="101729261">
+            <active dataType="Bool">true</active>
+            <children />
+            <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="2677118873">
+              <_items dataType="Array" type="Duality.Component[]" id="1108886606" length="8">
+                <item dataType="Struct" type="Duality.Components.Transform" id="2462044193">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">101729261</gameobj>
+                </item>
+                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="3164505785">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">101729261</gameobj>
+                </item>
+                <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.ActorRenderer" id="31494121">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">101729261</gameobj>
+                </item>
+                <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.ActorAnimator" id="1332836151">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">101729261</gameobj>
+                </item>
+                <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.CharacterController" id="1624898840">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">101729261</gameobj>
+                </item>
+                <item dataType="Struct" type="Game.NotAnEnemy" id="4143523849">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">101729261</gameobj>
+                </item>
+              </_items>
+              <_size dataType="Int">6</_size>
+            </compList>
+            <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="1004895872" surrogate="true">
+              <header />
+              <body>
+                <keys dataType="Array" type="System.Object[]" id="2931359155">
+                  <item dataType="ObjectRef">1998723686</item>
+                  <item dataType="ObjectRef">2530823182</item>
+                  <item dataType="ObjectRef">2267791648</item>
+                  <item dataType="ObjectRef">4275290954</item>
+                  <item dataType="ObjectRef">2991830846</item>
+                  <item dataType="ObjectRef">4217162202</item>
+                </keys>
+                <values dataType="Array" type="System.Object[]" id="2637084856">
+                  <item dataType="ObjectRef">2462044193</item>
+                  <item dataType="ObjectRef">31494121</item>
+                  <item dataType="ObjectRef">3164505785</item>
+                  <item dataType="ObjectRef">1624898840</item>
+                  <item dataType="ObjectRef">1332836151</item>
+                  <item dataType="ObjectRef">4143523849</item>
+                </values>
+              </body>
+            </compMap>
+            <compTransform dataType="ObjectRef">2462044193</compTransform>
+            <identifier dataType="Struct" type="System.Guid" surrogate="true">
+              <header>
+                <data dataType="Array" type="System.Byte[]" id="1963037145">DgfFv9XWhESafG9NCvetZw==</data>
+              </header>
+              <body />
+            </identifier>
+            <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
+            <name dataType="String">NotAnEnemy</name>
+            <parent dataType="ObjectRef">1209101988</parent>
+            <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2462206683">
+              <changes dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Resources.PrefabLink+VarMod]]" id="124698708">
+                <_items dataType="Array" type="Duality.Resources.PrefabLink+VarMod[]" id="4145784036" length="4">
+                  <item dataType="Struct" type="Duality.Resources.PrefabLink+VarMod">
+                    <childIndex dataType="Struct" type="System.Collections.Generic.List`1[[System.Int32]]" id="2689231048">
+                      <_items dataType="Array" type="System.Int32[]" id="2482076268"></_items>
+                      <_size dataType="Int">0</_size>
+                    </childIndex>
+                    <componentType dataType="ObjectRef">4217162202</componentType>
+                    <prop dataType="ObjectRef">1671701214</prop>
+                    <val dataType="ObjectRef">3082750301</val>
+                  </item>
+                  <item dataType="Struct" type="Duality.Resources.PrefabLink+VarMod">
+                    <childIndex dataType="Struct" type="System.Collections.Generic.List`1[[System.Int32]]" id="2855445214">
+                      <_items dataType="Array" type="System.Int32[]" id="109203338"></_items>
+                      <_size dataType="Int">0</_size>
+                    </childIndex>
+                    <componentType dataType="ObjectRef">1998723686</componentType>
+                    <prop dataType="ObjectRef">2967748386</prop>
+                    <val dataType="Struct" type="Duality.Vector3">
+                      <X dataType="Float">-490.897125</X>
+                      <Y dataType="Float">22.0000038</Y>
+                      <Z dataType="Float">0</Z>
+                    </val>
+                  </item>
+                </_items>
+                <_size dataType="Int">2</_size>
+              </changes>
+              <obj dataType="ObjectRef">101729261</obj>
+              <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
+                <contentPath dataType="String">Data\NotAnEnemy.Prefab.res</contentPath>
+              </prefab>
+            </prefabLink>
+          </item>
+          <item dataType="Struct" type="Duality.GameObject" id="1305295368">
+            <active dataType="Bool">true</active>
+            <children />
+            <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="123442328">
+              <_items dataType="Array" type="Duality.Component[]" id="3299084844" length="8">
+                <item dataType="Struct" type="Duality.Components.Transform" id="3665610300">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">1305295368</gameobj>
+                </item>
+                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="73104596">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">1305295368</gameobj>
+                </item>
+                <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.ActorRenderer" id="1235060228">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">1305295368</gameobj>
+                </item>
+                <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.ActorAnimator" id="2536402258">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">1305295368</gameobj>
+                </item>
+                <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.CharacterController" id="2828464947">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">1305295368</gameobj>
+                </item>
+                <item dataType="Struct" type="Game.NotAnEnemy" id="1052122660">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">1305295368</gameobj>
+                </item>
+              </_items>
+              <_size dataType="Int">6</_size>
+            </compList>
+            <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="4151227678" surrogate="true">
+              <header />
+              <body>
+                <keys dataType="Array" type="System.Object[]" id="273882970">
+                  <item dataType="ObjectRef">1998723686</item>
+                  <item dataType="ObjectRef">2530823182</item>
+                  <item dataType="ObjectRef">2267791648</item>
+                  <item dataType="ObjectRef">4275290954</item>
+                  <item dataType="ObjectRef">2991830846</item>
+                  <item dataType="ObjectRef">4217162202</item>
+                </keys>
+                <values dataType="Array" type="System.Object[]" id="3097115578">
+                  <item dataType="ObjectRef">3665610300</item>
+                  <item dataType="ObjectRef">1235060228</item>
+                  <item dataType="ObjectRef">73104596</item>
+                  <item dataType="ObjectRef">2828464947</item>
+                  <item dataType="ObjectRef">2536402258</item>
+                  <item dataType="ObjectRef">1052122660</item>
+                </values>
+              </body>
+            </compMap>
+            <compTransform dataType="ObjectRef">3665610300</compTransform>
+            <identifier dataType="Struct" type="System.Guid" surrogate="true">
+              <header>
+                <data dataType="Array" type="System.Byte[]" id="4145526106">OXW113iLtk+7UxEoS414hw==</data>
+              </header>
+              <body />
+            </identifier>
+            <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
+            <name dataType="String">NotAnEnemy</name>
+            <parent dataType="ObjectRef">1209101988</parent>
+            <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3032780484">
+              <changes dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Resources.PrefabLink+VarMod]]" id="1478758888">
+                <_items dataType="Array" type="Duality.Resources.PrefabLink+VarMod[]" id="3364346924" length="4">
+                  <item dataType="Struct" type="Duality.Resources.PrefabLink+VarMod">
+                    <childIndex dataType="Struct" type="System.Collections.Generic.List`1[[System.Int32]]" id="1985338920">
+                      <_items dataType="Array" type="System.Int32[]" id="485708204"></_items>
+                      <_size dataType="Int">0</_size>
+                    </childIndex>
+                    <componentType dataType="ObjectRef">4217162202</componentType>
+                    <prop dataType="ObjectRef">1671701214</prop>
+                    <val dataType="ObjectRef">3082750301</val>
+                  </item>
+                  <item dataType="Struct" type="Duality.Resources.PrefabLink+VarMod">
+                    <childIndex dataType="Struct" type="System.Collections.Generic.List`1[[System.Int32]]" id="2389659294">
+                      <_items dataType="ObjectRef">109203338</_items>
+                      <_size dataType="Int">0</_size>
+                    </childIndex>
+                    <componentType dataType="ObjectRef">1998723686</componentType>
+                    <prop dataType="ObjectRef">2967748386</prop>
+                    <val dataType="Struct" type="Duality.Vector3">
+                      <X dataType="Float">-475.896118</X>
+                      <Y dataType="Float">130</Y>
+                      <Z dataType="Float">0</Z>
+                    </val>
+                  </item>
+                </_items>
+                <_size dataType="Int">2</_size>
+              </changes>
+              <obj dataType="ObjectRef">1305295368</obj>
+              <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
+                <contentPath dataType="String">Data\NotAnEnemy.Prefab.res</contentPath>
+              </prefab>
+            </prefabLink>
+          </item>
         </_items>
-        <_size dataType="Int">3</_size>
+        <_size dataType="Int">5</_size>
       </children>
       <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="1835844922">
         <_items dataType="Array" type="Duality.Component[]" id="3556353376" length="0" />
@@ -1242,7 +1436,7 @@
     <item dataType="Struct" type="Duality.GameObject" id="2794353522">
       <active dataType="Bool">true</active>
       <children dataType="Struct" type="System.Collections.Generic.List`1[[Duality.GameObject]]" id="3172417180">
-        <_items dataType="Array" type="Duality.GameObject[]" id="547601348" length="4">
+        <_items dataType="Array" type="Duality.GameObject[]" id="547601348" length="8">
           <item dataType="Struct" type="Duality.GameObject" id="3267360422">
             <active dataType="Bool">true</active>
             <children />
@@ -1523,14 +1717,14 @@
                   </item>
                   <item dataType="Struct" type="Duality.Resources.PrefabLink+VarMod">
                     <childIndex dataType="Struct" type="System.Collections.Generic.List`1[[System.Int32]]" id="3189088034">
-                      <_items dataType="ObjectRef">3693006474</_items>
+                      <_items dataType="ObjectRef">109203338</_items>
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">1998723686</componentType>
                     <prop dataType="ObjectRef">2967748386</prop>
                     <val dataType="Struct" type="Duality.Vector3">
-                      <X dataType="Float">451.745819</X>
-                      <Y dataType="Float">56.5215836</Y>
+                      <X dataType="Float">454.745819</X>
+                      <Y dataType="Float">124.521584</Y>
                       <Z dataType="Float">0</Z>
                     </val>
                   </item>
@@ -1543,8 +1737,220 @@
               </prefab>
             </prefabLink>
           </item>
+          <item dataType="Struct" type="Duality.GameObject" id="19991294">
+            <active dataType="Bool">true</active>
+            <children />
+            <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="3540855334">
+              <_items dataType="Array" type="Duality.Component[]" id="1273172224" length="8">
+                <item dataType="Struct" type="Duality.Components.Transform" id="2380306226">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">19991294</gameobj>
+                </item>
+                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="3082767818">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">19991294</gameobj>
+                </item>
+                <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.ActorRenderer" id="4244723450">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">19991294</gameobj>
+                </item>
+                <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.ActorAnimator" id="1251098184">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">19991294</gameobj>
+                </item>
+                <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.CharacterController" id="1543160873">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">19991294</gameobj>
+                </item>
+                <item dataType="Struct" type="Game.NotAnEnemy" id="4061785882">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">19991294</gameobj>
+                </item>
+              </_items>
+              <_size dataType="Int">6</_size>
+            </compList>
+            <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="2571380410" surrogate="true">
+              <header />
+              <body>
+                <keys dataType="Array" type="System.Object[]" id="3790278036">
+                  <item dataType="ObjectRef">1998723686</item>
+                  <item dataType="ObjectRef">2530823182</item>
+                  <item dataType="ObjectRef">2267791648</item>
+                  <item dataType="ObjectRef">4275290954</item>
+                  <item dataType="ObjectRef">2991830846</item>
+                  <item dataType="ObjectRef">4217162202</item>
+                </keys>
+                <values dataType="Array" type="System.Object[]" id="1242714166">
+                  <item dataType="ObjectRef">2380306226</item>
+                  <item dataType="ObjectRef">4244723450</item>
+                  <item dataType="ObjectRef">3082767818</item>
+                  <item dataType="ObjectRef">1543160873</item>
+                  <item dataType="ObjectRef">1251098184</item>
+                  <item dataType="ObjectRef">4061785882</item>
+                </values>
+              </body>
+            </compMap>
+            <compTransform dataType="ObjectRef">2380306226</compTransform>
+            <identifier dataType="Struct" type="System.Guid" surrogate="true">
+              <header>
+                <data dataType="Array" type="System.Byte[]" id="1477183536">VU6i2JPZ6ESh8wDjZru9Qw==</data>
+              </header>
+              <body />
+            </identifier>
+            <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
+            <name dataType="String">NotAnEnemy</name>
+            <parent dataType="ObjectRef">2794353522</parent>
+            <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="614982950">
+              <changes dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Resources.PrefabLink+VarMod]]" id="4036746752">
+                <_items dataType="Array" type="Duality.Resources.PrefabLink+VarMod[]" id="2004569244" length="4">
+                  <item dataType="Struct" type="Duality.Resources.PrefabLink+VarMod">
+                    <childIndex dataType="Struct" type="System.Collections.Generic.List`1[[System.Int32]]" id="1303583944">
+                      <_items dataType="Array" type="System.Int32[]" id="2712285804"></_items>
+                      <_size dataType="Int">0</_size>
+                    </childIndex>
+                    <componentType dataType="ObjectRef">4217162202</componentType>
+                    <prop dataType="ObjectRef">1671701214</prop>
+                    <val dataType="ObjectRef">2787368413</val>
+                  </item>
+                  <item dataType="Struct" type="Duality.Resources.PrefabLink+VarMod">
+                    <childIndex dataType="Struct" type="System.Collections.Generic.List`1[[System.Int32]]" id="721050334">
+                      <_items dataType="Array" type="System.Int32[]" id="4204893066"></_items>
+                      <_size dataType="Int">0</_size>
+                    </childIndex>
+                    <componentType />
+                    <prop dataType="ObjectRef">1933941812</prop>
+                    <val dataType="String">NotAnEnemy</val>
+                  </item>
+                  <item dataType="Struct" type="Duality.Resources.PrefabLink+VarMod">
+                    <childIndex dataType="Struct" type="System.Collections.Generic.List`1[[System.Int32]]" id="581407028">
+                      <_items dataType="ObjectRef">109203338</_items>
+                      <_size dataType="Int">0</_size>
+                    </childIndex>
+                    <componentType dataType="ObjectRef">1998723686</componentType>
+                    <prop dataType="ObjectRef">2967748386</prop>
+                    <val dataType="Struct" type="Duality.Vector3">
+                      <X dataType="Float">447.746826</X>
+                      <Y dataType="Float">41.5215836</Y>
+                      <Z dataType="Float">0</Z>
+                    </val>
+                  </item>
+                </_items>
+                <_size dataType="Int">3</_size>
+              </changes>
+              <obj dataType="ObjectRef">19991294</obj>
+              <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
+                <contentPath dataType="String">Data\NotAnEnemy.Prefab.res</contentPath>
+              </prefab>
+            </prefabLink>
+          </item>
+          <item dataType="Struct" type="Duality.GameObject" id="1196917272">
+            <active dataType="Bool">true</active>
+            <children />
+            <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="678282896">
+              <_items dataType="Array" type="Duality.Component[]" id="3277106492" length="8">
+                <item dataType="Struct" type="Duality.Components.Transform" id="3557232204">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">1196917272</gameobj>
+                </item>
+                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="4259693796">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">1196917272</gameobj>
+                </item>
+                <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.ActorRenderer" id="1126682132">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">1196917272</gameobj>
+                </item>
+                <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.ActorAnimator" id="2428024162">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">1196917272</gameobj>
+                </item>
+                <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.CharacterController" id="2720086851">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">1196917272</gameobj>
+                </item>
+                <item dataType="Struct" type="Game.NotAnEnemy" id="943744564">
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">1196917272</gameobj>
+                </item>
+              </_items>
+              <_size dataType="Int">6</_size>
+            </compList>
+            <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="3110321902" surrogate="true">
+              <header />
+              <body>
+                <keys dataType="Array" type="System.Object[]" id="957395682">
+                  <item dataType="ObjectRef">1998723686</item>
+                  <item dataType="ObjectRef">2530823182</item>
+                  <item dataType="ObjectRef">2267791648</item>
+                  <item dataType="ObjectRef">4275290954</item>
+                  <item dataType="ObjectRef">2991830846</item>
+                  <item dataType="ObjectRef">4217162202</item>
+                </keys>
+                <values dataType="Array" type="System.Object[]" id="1331792522">
+                  <item dataType="ObjectRef">3557232204</item>
+                  <item dataType="ObjectRef">1126682132</item>
+                  <item dataType="ObjectRef">4259693796</item>
+                  <item dataType="ObjectRef">2720086851</item>
+                  <item dataType="ObjectRef">2428024162</item>
+                  <item dataType="ObjectRef">943744564</item>
+                </values>
+              </body>
+            </compMap>
+            <compTransform dataType="ObjectRef">3557232204</compTransform>
+            <identifier dataType="Struct" type="System.Guid" surrogate="true">
+              <header>
+                <data dataType="Array" type="System.Byte[]" id="868093202">NM7qxb0TREyH3pHjplo2aA==</data>
+              </header>
+              <body />
+            </identifier>
+            <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
+            <name dataType="String">NotAnEnemy</name>
+            <parent dataType="ObjectRef">2794353522</parent>
+            <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3487775596">
+              <changes dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Resources.PrefabLink+VarMod]]" id="3362506360">
+                <_items dataType="Array" type="Duality.Resources.PrefabLink+VarMod[]" id="323828076" length="4">
+                  <item dataType="Struct" type="Duality.Resources.PrefabLink+VarMod">
+                    <childIndex dataType="Struct" type="System.Collections.Generic.List`1[[System.Int32]]" id="241308072">
+                      <_items dataType="Array" type="System.Int32[]" id="2383724204"></_items>
+                      <_size dataType="Int">0</_size>
+                    </childIndex>
+                    <componentType dataType="ObjectRef">4217162202</componentType>
+                    <prop dataType="ObjectRef">1671701214</prop>
+                    <val dataType="ObjectRef">2787368413</val>
+                  </item>
+                  <item dataType="Struct" type="Duality.Resources.PrefabLink+VarMod">
+                    <childIndex dataType="Struct" type="System.Collections.Generic.List`1[[System.Int32]]" id="1371426718">
+                      <_items dataType="Array" type="System.Int32[]" id="3522869866"></_items>
+                      <_size dataType="Int">0</_size>
+                    </childIndex>
+                    <componentType />
+                    <prop dataType="ObjectRef">1933941812</prop>
+                    <val dataType="String">NotAnEnemy</val>
+                  </item>
+                  <item dataType="Struct" type="Duality.Resources.PrefabLink+VarMod">
+                    <childIndex dataType="Struct" type="System.Collections.Generic.List`1[[System.Int32]]" id="1095789460">
+                      <_items dataType="ObjectRef">109203338</_items>
+                      <_size dataType="Int">0</_size>
+                    </childIndex>
+                    <componentType dataType="ObjectRef">1998723686</componentType>
+                    <prop dataType="ObjectRef">2967748386</prop>
+                    <val dataType="Struct" type="Duality.Vector3">
+                      <X dataType="Float">466.747833</X>
+                      <Y dataType="Float">-71.4784241</Y>
+                      <Z dataType="Float">0</Z>
+                    </val>
+                  </item>
+                </_items>
+                <_size dataType="Int">3</_size>
+              </changes>
+              <obj dataType="ObjectRef">1196917272</obj>
+              <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
+                <contentPath dataType="String">Data\NotAnEnemy.Prefab.res</contentPath>
+              </prefab>
+            </prefabLink>
+          </item>
         </_items>
-        <_size dataType="Int">3</_size>
+        <_size dataType="Int">5</_size>
       </children>
       <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="1204408854">
         <_items dataType="ObjectRef">3556353376</_items>
@@ -2685,7 +3091,9 @@
         <_items dataType="Array" type="Duality.Component[]" id="2909312284" length="4">
           <item dataType="Struct" type="Game.Player" id="2065776175">
             <active dataType="Bool">true</active>
-            <bgMusic dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Sound]]" />
+            <bgMusic dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Sound]]">
+              <contentPath dataType="String">Data\Audio\SomeBGMusic.Sound.res</contentPath>
+            </bgMusic>
             <character dataType="ObjectRef">1271672030</character>
             <gameobj dataType="ObjectRef">3133526294</gameobj>
             <jointedThings dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Components.Physics.DistanceJointInfo]]" id="404946323">
@@ -2748,6 +3156,10 @@
     <item dataType="ObjectRef">2364888783</item>
     <item dataType="ObjectRef">3563440632</item>
     <item dataType="ObjectRef">3076070758</item>
+    <item dataType="ObjectRef">19991294</item>
+    <item dataType="ObjectRef">1196917272</item>
+    <item dataType="ObjectRef">101729261</item>
+    <item dataType="ObjectRef">1305295368</item>
   </serializeObj>
   <visibilityStrategy dataType="Struct" type="Duality.Components.DefaultRendererVisibilityStrategy" id="2035693768" />
 </root>
