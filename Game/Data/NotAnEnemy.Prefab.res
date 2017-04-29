@@ -185,6 +185,7 @@
           <hitSound dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Sound]]">
             <contentPath dataType="String">Data\Audio\HitProtagonist.Sound.res</contentPath>
           </hitSound>
+          <lastHitTime dataType="Float">0</lastHitTime>
           <scoreSound dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Sound]]">
             <contentPath dataType="String">Data\Audio\Score.Sound.res</contentPath>
           </scoreSound>
