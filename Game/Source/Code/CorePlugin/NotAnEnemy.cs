@@ -13,11 +13,9 @@ using Duality.Drawing;
 using Duality.Samples.Tilemaps.RpgLike;
 
 
-namespace Game
-{
+namespace Game {
 	[RequiredComponent(typeof(CharacterController))]
-	public class NotAnEnemy : Component, ICmpUpdatable
-	{
+	public class NotAnEnemy : Component, ICmpUpdatable {
 		private Vector2 targetPos;
 		private MovementPath travelPath;
 		private int waypointIndex;
@@ -25,27 +23,36 @@ namespace Game
 		private bool carriesStuff = true;
 		private float walkSpeed = 1.0f;
 		private ContentRef<Prefab> scoreText = null;
+		private double hitAnimationStart = -6d;
+		private double hitAnimationDuration = 0.5d;
+		private int hitAnimationBlinkrate = 10;
+		private int hitAnimationBlinkframes = 0;
 
 
-		public Vector2 TargetPos
-		{
+		public Vector2 TargetPos {
 			get { return this.targetPos; }
 			set { this.targetPos = value; }
 		}
-		public MovementPath TravelPath
-		{
+		public MovementPath TravelPath {
 			get { return this.travelPath; }
 			set { this.travelPath = value; }
 		}
-		public ContentRef<Prefab> ScoreText
-		{
+		public ContentRef<Prefab> ScoreText {
 			get { return this.scoreText; }
 			set { this.scoreText = value; }
 		}
 
+		public double HitAnimationDuration {
+			get { return hitAnimationDuration; }
+			set { hitAnimationDuration = value; }
+		}
 
-		private void Score()
-		{
+		public int HitAnimationBlinkrate {
+			get {return hitAnimationBlinkrate;}
+			set {hitAnimationBlinkrate = value;}
+		}
+
+		private void Score() {
 			GameObject scoreObj = this.scoreText.Res.Instantiate();
 			FloatingText text = scoreObj.GetComponent<FloatingText>();
 			scoreObj.Transform.Pos = this.GameObj.Transform.Pos - Vector3.UnitY * 100;
@@ -53,10 +60,15 @@ namespace Game
 			this.GameObj.ParentScene.AddObject(scoreObj);
 		}
 
-		void ICmpUpdatable.OnUpdate()
-		{
+		void ICmpUpdatable.OnUpdate() {
 			Transform transform = this.GameObj.Transform;
 			CharacterController character = this.GameObj.GetComponent<CharacterController>();
+
+			// temp hack to test HitNotAnEnemy()
+			if (DualityApp.Keyboard.KeyHit(Key.E)) {
+				hitAnimationStart = Time.GameTimer.TotalSeconds;
+				HitNotAnEnemy();
+			}
 
 			// Find out which waypoint we're travelling to
 			Transform waypoint = this.travelPath.Waypoints[this.waypointIndex];
@@ -77,43 +89,33 @@ namespace Game
 			Vector2 rayStart = transform.Pos.Xy;
 			Vector2 rayEnd = rayStart + directionToTarget * 64.0f;
 			RayCastData rayFirstHit;
-			bool rayHitAnything = RigidBody.RayCast(rayStart, rayEnd, data =>
-			{
+			bool rayHitAnything = RigidBody.RayCast(rayStart, rayEnd, data => {
 				if (data.GameObj == character.GameObj) return -1;
 				if (data.Body.BodyType == BodyType.Static) return -1;
 				if (data.Fraction < 0.5f) return -1;
 				return data.Fraction;
 			}, out rayFirstHit);
 
-			if (rayHitAnything)
-			{
+			if (rayHitAnything) {
 				movementDirection = movementDirection + movementDirection.PerpendicularRight;
 				movementDirection.Normalize();
 				//VisualLog.Default.DrawConnection(new Vector3(rayStart, 0.0f), rayFirstHit.Pos).WithOffset(-100).WithColor(ColorRgba.Red);
-			}
-			else
-			{
+			} else {
 				//VisualLog.Default.DrawConnection(new Vector3(rayStart, 0.0f), rayEnd).WithOffset(-100);
 			}
 
 			// Switch to the next waypoint when arriving
-			if (targetDistance < 16.0f)
-			{
-				if (this.walkBackwards)
-				{
+			if (targetDistance < 16.0f) {
+				if (this.walkBackwards) {
 					this.waypointIndex--;
-					if (this.waypointIndex < 0)
-					{
+					if (this.waypointIndex < 0) {
 						this.walkBackwards = false;
 						this.carriesStuff = true;
 						this.waypointIndex += 2;
 					}
-				}
-				else
-				{
+				} else {
 					this.waypointIndex++;
-					if (this.waypointIndex >= this.travelPath.Waypoints.Count)
-					{
+					if (this.waypointIndex >= this.travelPath.Waypoints.Count) {
 						this.Score();
 						this.walkBackwards = true;
 						this.carriesStuff = false;
@@ -127,6 +129,30 @@ namespace Game
 			renderer.ColorTint = this.carriesStuff ? ColorRgba.Green : ColorRgba.White;
 
 			character.TargetMovement = movementDirection * movementSpeed;
+
+			// Hit Animation code
+			if (hitAnimationStart + hitAnimationDuration > Time.GameTimer.TotalSeconds) {
+				hitAnimationBlinkframes++;
+				if (hitAnimationBlinkframes > hitAnimationBlinkrate) {
+					hitAnimationBlinkframes = 0;
+					if (renderer.Active == true) {
+						renderer.Active = false;
+					} else {
+						renderer.Active = true;
+					}
+				}
+			} else {
+				renderer.Active = true;
+			}
+		}
+
+		private void HitNotAnEnemy() {
+			this.carriesStuff = false;
+			// Turn around if walking to target
+			if (walkBackwards == false) {
+				this.waypointIndex -= 1;
+				walkBackwards = true;
+			}
 		}
 	}
 }
