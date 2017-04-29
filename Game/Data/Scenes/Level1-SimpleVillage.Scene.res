@@ -3511,213 +3511,16 @@
                   <vel dataType="Struct" type="Duality.Vector3" />
                   <velAbs dataType="Struct" type="Duality.Vector3" />
                 </item>
-                <item dataType="Struct" type="Game.Teleporter" id="2933563440">
-                  <active dataType="Bool">true</active>
-                  <cooldown dataType="Float">0</cooldown>
-                  <gameobj dataType="ObjectRef">2543904414</gameobj>
-                  <target dataType="Struct" type="Game.Teleporter" id="2394457069">
-                    <active dataType="Bool">true</active>
-                    <cooldown dataType="Float">0</cooldown>
-                    <gameobj dataType="Struct" type="Duality.GameObject" id="2004798043">
-                      <active dataType="Bool">true</active>
-                      <children />
-                      <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="3191770928">
-                        <_items dataType="Array" type="Duality.Component[]" id="1432038076" length="4">
-                          <item dataType="Struct" type="Duality.Components.Transform" id="70145679">
-                            <active dataType="Bool">true</active>
-                            <angle dataType="Float">0</angle>
-                            <angleAbs dataType="Float">0</angleAbs>
-                            <angleVel dataType="Float">0</angleVel>
-                            <angleVelAbs dataType="Float">0</angleVelAbs>
-                            <deriveAngle dataType="Bool">true</deriveAngle>
-                            <gameobj dataType="ObjectRef">2004798043</gameobj>
-                            <ignoreParent dataType="Bool">false</ignoreParent>
-                            <parentTransform />
-                            <pos dataType="Struct" type="Duality.Vector3">
-                              <X dataType="Float">-15</X>
-                              <Y dataType="Float">79</Y>
-                              <Z dataType="Float">0</Z>
-                            </pos>
-                            <posAbs dataType="Struct" type="Duality.Vector3">
-                              <X dataType="Float">-15</X>
-                              <Y dataType="Float">79</Y>
-                              <Z dataType="Float">0</Z>
-                            </posAbs>
-                            <scale dataType="Float">1</scale>
-                            <scaleAbs dataType="Float">1</scaleAbs>
-                            <vel dataType="Struct" type="Duality.Vector3" />
-                            <velAbs dataType="Struct" type="Duality.Vector3" />
-                          </item>
-                          <item dataType="ObjectRef">2394457069</item>
-                        </_items>
-                        <_size dataType="Int">2</_size>
-                      </compList>
-                      <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="3685196398" surrogate="true">
-                        <header />
-                        <body>
-                          <keys dataType="Array" type="System.Object[]" id="1859598082">
-                            <item dataType="Type" id="2673653136" value="Game.Teleporter" />
-                            <item dataType="ObjectRef">2060286638</item>
-                          </keys>
-                          <values dataType="Array" type="System.Object[]" id="2527544202">
-                            <item dataType="ObjectRef">2394457069</item>
-                            <item dataType="ObjectRef">70145679</item>
-                          </values>
-                        </body>
-                      </compMap>
-                      <compTransform dataType="ObjectRef">70145679</compTransform>
-                      <identifier dataType="Struct" type="System.Guid" surrogate="true">
-                        <header>
-                          <data dataType="Array" type="System.Byte[]" id="1310749042">b47SbKxRIUSV9UrhkqRQFQ==</data>
-                        </header>
-                        <body />
-                      </identifier>
-                      <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                      <name dataType="String">Teleporter</name>
-                      <parent dataType="ObjectRef">71033543</parent>
-                      <prefabLink />
-                    </gameobj>
-                    <target dataType="Struct" type="Game.Teleporter" id="3760095091">
-                      <active dataType="Bool">true</active>
-                      <cooldown dataType="Float">0</cooldown>
-                      <gameobj dataType="Struct" type="Duality.GameObject" id="3370436065">
-                        <active dataType="Bool">true</active>
-                        <children />
-                        <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="1256386281">
-                          <_items dataType="Array" type="Duality.Component[]" id="1695613710" length="4">
-                            <item dataType="Struct" type="Duality.Components.Transform" id="1435783701">
-                              <active dataType="Bool">true</active>
-                              <angle dataType="Float">0</angle>
-                              <angleAbs dataType="Float">0</angleAbs>
-                              <angleVel dataType="Float">0</angleVel>
-                              <angleVelAbs dataType="Float">0</angleVelAbs>
-                              <deriveAngle dataType="Bool">true</deriveAngle>
-                              <gameobj dataType="ObjectRef">3370436065</gameobj>
-                              <ignoreParent dataType="Bool">false</ignoreParent>
-                              <parentTransform />
-                              <pos dataType="Struct" type="Duality.Vector3">
-                                <X dataType="Float">-47</X>
-                                <Y dataType="Float">-113</Y>
-                                <Z dataType="Float">0</Z>
-                              </pos>
-                              <posAbs dataType="Struct" type="Duality.Vector3">
-                                <X dataType="Float">-47</X>
-                                <Y dataType="Float">-113</Y>
-                                <Z dataType="Float">0</Z>
-                              </posAbs>
-                              <scale dataType="Float">1</scale>
-                              <scaleAbs dataType="Float">1</scaleAbs>
-                              <vel dataType="Struct" type="Duality.Vector3" />
-                              <velAbs dataType="Struct" type="Duality.Vector3" />
-                            </item>
-                            <item dataType="ObjectRef">3760095091</item>
-                          </_items>
-                          <_size dataType="Int">2</_size>
-                        </compList>
-                        <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="2132802752" surrogate="true">
-                          <header />
-                          <body>
-                            <keys dataType="Array" type="System.Object[]" id="1285772643">
-                              <item dataType="ObjectRef">2673653136</item>
-                              <item dataType="ObjectRef">2060286638</item>
-                            </keys>
-                            <values dataType="Array" type="System.Object[]" id="974254328">
-                              <item dataType="ObjectRef">3760095091</item>
-                              <item dataType="ObjectRef">1435783701</item>
-                            </values>
-                          </body>
-                        </compMap>
-                        <compTransform dataType="ObjectRef">1435783701</compTransform>
-                        <identifier dataType="Struct" type="System.Guid" surrogate="true">
-                          <header>
-                            <data dataType="Array" type="System.Byte[]" id="3259036361">0I8lsMGi/EqqONrjlNVtzQ==</data>
-                          </header>
-                          <body />
-                        </identifier>
-                        <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                        <name dataType="String">Teleporter</name>
-                        <parent dataType="ObjectRef">71033543</parent>
-                        <prefabLink />
-                      </gameobj>
-                      <target dataType="Struct" type="Game.Teleporter" id="1825893346">
-                        <active dataType="Bool">true</active>
-                        <cooldown dataType="Float">0</cooldown>
-                        <gameobj dataType="Struct" type="Duality.GameObject" id="1436234320">
-                          <active dataType="Bool">true</active>
-                          <children />
-                          <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="3079542446">
-                            <_items dataType="Array" type="Duality.Component[]" id="2156469584" length="4">
-                              <item dataType="Struct" type="Duality.Components.Transform" id="3796549252">
-                                <active dataType="Bool">true</active>
-                                <angle dataType="Float">0</angle>
-                                <angleAbs dataType="Float">0</angleAbs>
-                                <angleVel dataType="Float">0</angleVel>
-                                <angleVelAbs dataType="Float">0</angleVelAbs>
-                                <deriveAngle dataType="Bool">true</deriveAngle>
-                                <gameobj dataType="ObjectRef">1436234320</gameobj>
-                                <ignoreParent dataType="Bool">false</ignoreParent>
-                                <parentTransform />
-                                <pos dataType="Struct" type="Duality.Vector3">
-                                  <X dataType="Float">-463</X>
-                                  <Y dataType="Float">177</Y>
-                                  <Z dataType="Float">0</Z>
-                                </pos>
-                                <posAbs dataType="Struct" type="Duality.Vector3">
-                                  <X dataType="Float">-463</X>
-                                  <Y dataType="Float">177</Y>
-                                  <Z dataType="Float">0</Z>
-                                </posAbs>
-                                <scale dataType="Float">1</scale>
-                                <scaleAbs dataType="Float">1</scaleAbs>
-                                <vel dataType="Struct" type="Duality.Vector3" />
-                                <velAbs dataType="Struct" type="Duality.Vector3" />
-                              </item>
-                              <item dataType="ObjectRef">1825893346</item>
-                            </_items>
-                            <_size dataType="Int">2</_size>
-                          </compList>
-                          <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="2889257674" surrogate="true">
-                            <header />
-                            <body>
-                              <keys dataType="Array" type="System.Object[]" id="3172406060">
-                                <item dataType="ObjectRef">2673653136</item>
-                                <item dataType="ObjectRef">2060286638</item>
-                              </keys>
-                              <values dataType="Array" type="System.Object[]" id="1073200566">
-                                <item dataType="ObjectRef">1825893346</item>
-                                <item dataType="ObjectRef">3796549252</item>
-                              </values>
-                            </body>
-                          </compMap>
-                          <compTransform dataType="ObjectRef">3796549252</compTransform>
-                          <identifier dataType="Struct" type="System.Guid" surrogate="true">
-                            <header>
-                              <data dataType="Array" type="System.Byte[]" id="2813921656">u3DD3FjOyEKx2EeRfXO8Iw==</data>
-                            </header>
-                            <body />
-                          </identifier>
-                          <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                          <name dataType="String">Teleporter</name>
-                          <parent dataType="ObjectRef">71033543</parent>
-                          <prefabLink />
-                        </gameobj>
-                        <target dataType="ObjectRef">2394457069</target>
-                      </target>
-                    </target>
-                  </target>
-                </item>
               </_items>
-              <_size dataType="Int">2</_size>
+              <_size dataType="Int">1</_size>
             </compList>
             <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="837763210" surrogate="true">
               <header />
               <body>
                 <keys dataType="Array" type="System.Object[]" id="608430936">
-                  <item dataType="ObjectRef">2673653136</item>
                   <item dataType="ObjectRef">2060286638</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="1968804766">
-                  <item dataType="ObjectRef">2933563440</item>
                   <item dataType="ObjectRef">609252050</item>
                 </values>
               </body>
@@ -3734,8 +3537,118 @@
             <parent dataType="ObjectRef">71033543</parent>
             <prefabLink />
           </item>
-          <item dataType="ObjectRef">2004798043</item>
-          <item dataType="ObjectRef">3370436065</item>
+          <item dataType="Struct" type="Duality.GameObject" id="2004798043">
+            <active dataType="Bool">true</active>
+            <children />
+            <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="1074970635">
+              <_items dataType="Array" type="Duality.Component[]" id="2240577654" length="4">
+                <item dataType="Struct" type="Duality.Components.Transform" id="70145679">
+                  <active dataType="Bool">true</active>
+                  <angle dataType="Float">0</angle>
+                  <angleAbs dataType="Float">0</angleAbs>
+                  <angleVel dataType="Float">0</angleVel>
+                  <angleVelAbs dataType="Float">0</angleVelAbs>
+                  <deriveAngle dataType="Bool">true</deriveAngle>
+                  <gameobj dataType="ObjectRef">2004798043</gameobj>
+                  <ignoreParent dataType="Bool">false</ignoreParent>
+                  <parentTransform />
+                  <pos dataType="Struct" type="Duality.Vector3">
+                    <X dataType="Float">-15</X>
+                    <Y dataType="Float">79</Y>
+                    <Z dataType="Float">0</Z>
+                  </pos>
+                  <posAbs dataType="Struct" type="Duality.Vector3">
+                    <X dataType="Float">-15</X>
+                    <Y dataType="Float">79</Y>
+                    <Z dataType="Float">0</Z>
+                  </posAbs>
+                  <scale dataType="Float">1</scale>
+                  <scaleAbs dataType="Float">1</scaleAbs>
+                  <vel dataType="Struct" type="Duality.Vector3" />
+                  <velAbs dataType="Struct" type="Duality.Vector3" />
+                </item>
+              </_items>
+              <_size dataType="Int">1</_size>
+            </compList>
+            <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="3819074248" surrogate="true">
+              <header />
+              <body>
+                <keys dataType="Array" type="System.Object[]" id="447326113">
+                  <item dataType="ObjectRef">2060286638</item>
+                </keys>
+                <values dataType="Array" type="System.Object[]" id="717336352">
+                  <item dataType="ObjectRef">70145679</item>
+                </values>
+              </body>
+            </compMap>
+            <compTransform dataType="ObjectRef">70145679</compTransform>
+            <identifier dataType="Struct" type="System.Guid" surrogate="true">
+              <header>
+                <data dataType="Array" type="System.Byte[]" id="1019077171">b47SbKxRIUSV9UrhkqRQFQ==</data>
+              </header>
+              <body />
+            </identifier>
+            <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
+            <name dataType="String">Teleporter</name>
+            <parent dataType="ObjectRef">71033543</parent>
+            <prefabLink />
+          </item>
+          <item dataType="Struct" type="Duality.GameObject" id="3370436065">
+            <active dataType="Bool">true</active>
+            <children />
+            <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="3329165121">
+              <_items dataType="Array" type="Duality.Component[]" id="4073746862" length="4">
+                <item dataType="Struct" type="Duality.Components.Transform" id="1435783701">
+                  <active dataType="Bool">true</active>
+                  <angle dataType="Float">0</angle>
+                  <angleAbs dataType="Float">0</angleAbs>
+                  <angleVel dataType="Float">0</angleVel>
+                  <angleVelAbs dataType="Float">0</angleVelAbs>
+                  <deriveAngle dataType="Bool">true</deriveAngle>
+                  <gameobj dataType="ObjectRef">3370436065</gameobj>
+                  <ignoreParent dataType="Bool">false</ignoreParent>
+                  <parentTransform />
+                  <pos dataType="Struct" type="Duality.Vector3">
+                    <X dataType="Float">-47</X>
+                    <Y dataType="Float">-113</Y>
+                    <Z dataType="Float">0</Z>
+                  </pos>
+                  <posAbs dataType="Struct" type="Duality.Vector3">
+                    <X dataType="Float">-47</X>
+                    <Y dataType="Float">-113</Y>
+                    <Z dataType="Float">0</Z>
+                  </posAbs>
+                  <scale dataType="Float">1</scale>
+                  <scaleAbs dataType="Float">1</scaleAbs>
+                  <vel dataType="Struct" type="Duality.Vector3" />
+                  <velAbs dataType="Struct" type="Duality.Vector3" />
+                </item>
+              </_items>
+              <_size dataType="Int">1</_size>
+            </compList>
+            <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="2849268192" surrogate="true">
+              <header />
+              <body>
+                <keys dataType="Array" type="System.Object[]" id="925565067">
+                  <item dataType="ObjectRef">2060286638</item>
+                </keys>
+                <values dataType="Array" type="System.Object[]" id="1170013384">
+                  <item dataType="ObjectRef">1435783701</item>
+                </values>
+              </body>
+            </compMap>
+            <compTransform dataType="ObjectRef">1435783701</compTransform>
+            <identifier dataType="Struct" type="System.Guid" surrogate="true">
+              <header>
+                <data dataType="Array" type="System.Byte[]" id="2294846017">0I8lsMGi/EqqONrjlNVtzQ==</data>
+              </header>
+              <body />
+            </identifier>
+            <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
+            <name dataType="String">Teleporter</name>
+            <parent dataType="ObjectRef">71033543</parent>
+            <prefabLink />
+          </item>
           <item dataType="Struct" type="Duality.GameObject" id="716241110">
             <active dataType="Bool">true</active>
             <children />
@@ -3766,24 +3679,16 @@
                   <vel dataType="Struct" type="Duality.Vector3" />
                   <velAbs dataType="Struct" type="Duality.Vector3" />
                 </item>
-                <item dataType="Struct" type="Game.Teleporter" id="1105900136">
-                  <active dataType="Bool">true</active>
-                  <cooldown dataType="Float">0</cooldown>
-                  <gameobj dataType="ObjectRef">716241110</gameobj>
-                  <target dataType="ObjectRef">2394457069</target>
-                </item>
               </_items>
-              <_size dataType="Int">2</_size>
+              <_size dataType="Int">1</_size>
             </compList>
             <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="3159313722" surrogate="true">
               <header />
               <body>
                 <keys dataType="Array" type="System.Object[]" id="880657728">
-                  <item dataType="ObjectRef">2673653136</item>
                   <item dataType="ObjectRef">2060286638</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="1684896334">
-                  <item dataType="ObjectRef">1105900136</item>
                   <item dataType="ObjectRef">3076556042</item>
                 </values>
               </body>
@@ -3830,24 +3735,16 @@
                   <vel dataType="Struct" type="Duality.Vector3" />
                   <velAbs dataType="Struct" type="Duality.Vector3" />
                 </item>
-                <item dataType="Struct" type="Game.Teleporter" id="2607426632">
-                  <active dataType="Bool">true</active>
-                  <cooldown dataType="Float">0</cooldown>
-                  <gameobj dataType="ObjectRef">2217767606</gameobj>
-                  <target dataType="ObjectRef">3760095091</target>
-                </item>
               </_items>
-              <_size dataType="Int">2</_size>
+              <_size dataType="Int">1</_size>
             </compList>
             <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="1505549626" surrogate="true">
               <header />
               <body>
                 <keys dataType="Array" type="System.Object[]" id="1614987104">
-                  <item dataType="ObjectRef">2673653136</item>
                   <item dataType="ObjectRef">2060286638</item>
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="2064744590">
-                  <item dataType="ObjectRef">2607426632</item>
                   <item dataType="ObjectRef">283115242</item>
                 </values>
               </body>
@@ -3864,7 +3761,62 @@
             <parent dataType="ObjectRef">71033543</parent>
             <prefabLink />
           </item>
-          <item dataType="ObjectRef">1436234320</item>
+          <item dataType="Struct" type="Duality.GameObject" id="1436234320">
+            <active dataType="Bool">true</active>
+            <children />
+            <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="3240478668">
+              <_items dataType="Array" type="Duality.Component[]" id="2455229604" length="4">
+                <item dataType="Struct" type="Duality.Components.Transform" id="3796549252">
+                  <active dataType="Bool">true</active>
+                  <angle dataType="Float">0</angle>
+                  <angleAbs dataType="Float">0</angleAbs>
+                  <angleVel dataType="Float">0</angleVel>
+                  <angleVelAbs dataType="Float">0</angleVelAbs>
+                  <deriveAngle dataType="Bool">true</deriveAngle>
+                  <gameobj dataType="ObjectRef">1436234320</gameobj>
+                  <ignoreParent dataType="Bool">false</ignoreParent>
+                  <parentTransform />
+                  <pos dataType="Struct" type="Duality.Vector3">
+                    <X dataType="Float">-463</X>
+                    <Y dataType="Float">177</Y>
+                    <Z dataType="Float">0</Z>
+                  </pos>
+                  <posAbs dataType="Struct" type="Duality.Vector3">
+                    <X dataType="Float">-463</X>
+                    <Y dataType="Float">177</Y>
+                    <Z dataType="Float">0</Z>
+                  </posAbs>
+                  <scale dataType="Float">1</scale>
+                  <scaleAbs dataType="Float">1</scaleAbs>
+                  <vel dataType="Struct" type="Duality.Vector3" />
+                  <velAbs dataType="Struct" type="Duality.Vector3" />
+                </item>
+              </_items>
+              <_size dataType="Int">1</_size>
+            </compList>
+            <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="1881285366" surrogate="true">
+              <header />
+              <body>
+                <keys dataType="Array" type="System.Object[]" id="324816966">
+                  <item dataType="ObjectRef">2060286638</item>
+                </keys>
+                <values dataType="Array" type="System.Object[]" id="742430138">
+                  <item dataType="ObjectRef">3796549252</item>
+                </values>
+              </body>
+            </compMap>
+            <compTransform dataType="ObjectRef">3796549252</compTransform>
+            <identifier dataType="Struct" type="System.Guid" surrogate="true">
+              <header>
+                <data dataType="Array" type="System.Byte[]" id="2464847942">u3DD3FjOyEKx2EeRfXO8Iw==</data>
+              </header>
+              <body />
+            </identifier>
+            <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
+            <name dataType="String">Teleporter</name>
+            <parent dataType="ObjectRef">71033543</parent>
+            <prefabLink />
+          </item>
         </_items>
         <_size dataType="Int">6</_size>
       </children>
