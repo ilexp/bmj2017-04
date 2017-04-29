@@ -112,7 +112,10 @@ namespace Game {
 			}, out rayFirstHit);
 
 			if (rayHitAnything) {
-				movementDirection = movementDirection + movementDirection.PerpendicularRight;
+				Vector2 offset = (((int)Time.GameTimer.TotalSeconds / 5) % 2) == 0 ? 
+					movementDirection.PerpendicularLeft : 
+					movementDirection.PerpendicularRight;
+				movementDirection = movementDirection + offset;
 				movementDirection.Normalize();
 				//VisualLog.Default.DrawConnection(new Vector3(rayStart, 0.0f), rayFirstHit.Pos).WithOffset(-100).WithColor(ColorRgba.Red);
 			} else {
