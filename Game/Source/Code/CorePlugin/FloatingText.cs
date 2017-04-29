@@ -11,6 +11,7 @@ namespace Game {
 		private float lifetime;
 		private float totalLifetime = 1.0f;
 		private string text = "Hello";
+		private ColorRgba color = ColorRgba.White;
 
 
 		public float TotalLifetime
@@ -22,6 +23,11 @@ namespace Game {
 		{
 			get { return this.text; }
 			set { this.text = value; }
+		}
+		public ColorRgba Color
+		{
+			get { return this.color; }
+			set { this.color = value; }
 		}
 
 
@@ -39,7 +45,7 @@ namespace Game {
 
 			TextRenderer renderer = this.GameObj.GetComponent<TextRenderer>();
 			renderer.Text.SourceText = this.text;
-			renderer.ColorTint = ColorRgba.White.WithAlpha(1.0f - progress);
+			renderer.ColorTint = this.color.WithAlpha(1.0f - progress);
 		}
 	}
 }

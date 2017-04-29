@@ -16,6 +16,6 @@
   <minDistFactor dataType="Float">1</minDistFactor>
   <pitchFactor dataType="Float">1</pitchFactor>
   <type dataType="Enum" type="Duality.Audio.SoundType" name="World" value="0" />
-  <volFactor dataType="Float">0.5</volFactor>
+  <volFactor dataType="Float">0.2</volFactor>
 </root>
 <!-- XmlFormatterBase Document Separator -->

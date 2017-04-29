@@ -66,11 +66,20 @@ namespace Game {
 			set {hitAnimationBlinkrate = value;}
 		}
 
-		private void Score() {
+		private void Score(bool negative) {
 			GameObject scoreObj = this.scoreText.Res.Instantiate();
 			FloatingText text = scoreObj.GetComponent<FloatingText>();
 			scoreObj.Transform.Pos = this.GameObj.Transform.Pos - Vector3.UnitY * 100;
-			text.Text = string.Format("+ {0}", MathF.Rnd.Next(1, 4) * 100);
+			if (negative)
+			{
+				text.Text = string.Format("- {0}", MathF.Rnd.Next(1, 6) * 10);
+				text.Color = ColorRgba.Red;
+			}
+			else
+			{
+				text.Text = string.Format("+ {0}", MathF.Rnd.Next(1, 4) * 100);
+				text.Color = ColorRgba.Green;
+			}
 			this.GameObj.ParentScene.AddObject(scoreObj);
 			DualityApp.Sound.PlaySound(this.scoreSound);
 		}
@@ -128,13 +137,13 @@ namespace Game {
 					if (this.waypointIndex < 0) {
 						this.walkBackwards = false;
 						this.carriesStuff = true;
-						this.carryType = MathF.Rnd.Next(5);
+						this.carryType = MathF.Rnd.Next(1, 5);
 						this.waypointIndex += 2;
 					}
 				} else {
 					this.waypointIndex++;
 					if (this.waypointIndex >= this.travelPath.Waypoints.Count) {
-						this.Score();
+						this.Score(false);
 						this.walkBackwards = true;
 						this.carriesStuff = false;
 						this.waypointIndex -= 2;
@@ -185,7 +194,7 @@ namespace Game {
 		{
 			if (context == InitContext.Activate)
 			{
-				this.carryType = MathF.Rnd.Next(5);
+				this.carryType = MathF.Rnd.Next(1, 5);
 			}
 		}
 		void ICmpInitializable.OnShutdown(ShutdownContext context) { }
@@ -204,6 +213,7 @@ namespace Game {
 			this.lastHitTime = time;
 			if (args.CollisionData.NormalImpulse > 50.0f)
 			{
+				this.Score(true);
 				this.HitNotAnEnemy();
 
 				RigidBody other = bodyArgs.OtherShape.Parent;
