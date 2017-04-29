@@ -81,7 +81,6 @@ namespace Game {
 
 			// temp hack to test HitNotAnEnemy()
 			if (DualityApp.Keyboard.KeyHit(Key.E)) {
-				hitAnimationStart = Time.GameTimer.TotalSeconds;
 				HitNotAnEnemy();
 			}
 
@@ -173,6 +172,7 @@ namespace Game {
 
 		private void HitNotAnEnemy() {
 			DualityApp.Sound.PlaySound(this.hitSound);
+			hitAnimationStart = Time.GameTimer.TotalSeconds;
 			this.carriesStuff = false;
 			// Turn around if walking to target
 			if (walkBackwards == false) {

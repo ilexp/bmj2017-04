@@ -85,13 +85,13 @@
           <isVertical dataType="Bool">true</isVertical>
           <offset dataType="Float">-0.08</offset>
           <rect dataType="Struct" type="Duality.Rect">
-            <H dataType="Float">48</H>
+            <H dataType="Float">32</H>
             <W dataType="Float">32</W>
             <X dataType="Float">-16</X>
-            <Y dataType="Float">-40</Y>
+            <Y dataType="Float">-24</Y>
           </rect>
           <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
-            <contentPath dataType="String">Data\TilemapsSample\Actors\Cylinder.Material.res</contentPath>
+            <contentPath dataType="String">Data\Graphics\character.Material.res</contentPath>
           </sharedMat>
           <spriteIndex dataType="Int">0</spriteIndex>
           <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group0" value="1" />

@@ -566,8 +566,13 @@
         <_items dataType="Array" type="Duality.Component[]" id="227385638" length="4">
           <item dataType="Struct" type="Game.Player" id="2004573976">
             <active dataType="Bool">true</active>
+            <bgMusic dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Sound]]" />
             <character dataType="ObjectRef">4029794061</character>
             <gameobj dataType="ObjectRef">3072324095</gameobj>
+            <jointedThings dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Components.Physics.DistanceJointInfo]]" id="550977780">
+              <_items dataType="Array" type="Duality.Components.Physics.DistanceJointInfo[]" id="1288530084" length="0" />
+              <_size dataType="Int">0</_size>
+            </jointedThings>
           </item>
         </_items>
         <_size dataType="Int">1</_size>
