@@ -44,7 +44,7 @@
           <colWith dataType="Enum" type="Duality.Components.Physics.CollisionCategory" name="All" value="2147483647" />
           <continous dataType="Bool">false</continous>
           <explicitInertia dataType="Float">0</explicitInertia>
-          <explicitMass dataType="Float">0</explicitMass>
+          <explicitMass dataType="Float">15</explicitMass>
           <fixedAngle dataType="Bool">true</fixedAngle>
           <gameobj dataType="ObjectRef">118080788</gameobj>
           <ignoreGravity dataType="Bool">false</ignoreGravity>

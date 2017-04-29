@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="MovementPath.cs" />
     <Compile Include="NotAnEnemy.cs" />
+    <Compile Include="FloatingText.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="CorePlugin.cs" />
     <Compile Include="CameraController.cs" />

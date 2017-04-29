@@ -21,6 +21,7 @@ namespace Game
 		private MovementPath travelPath;
 		private int waypointIndex;
 		private bool walkBackwards;
+		private bool carriesStuff = true;
 		private float walkSpeed = 1.0f;
 
 
@@ -87,7 +88,8 @@ namespace Game
 					this.waypointIndex--;
 					if (this.waypointIndex < 0)
 					{
-						this.walkBackwards = !this.walkBackwards;
+						this.walkBackwards = false;
+						this.carriesStuff = true;
 						this.waypointIndex += 2;
 					}
 				}
@@ -96,11 +98,16 @@ namespace Game
 					this.waypointIndex++;
 					if (this.waypointIndex >= this.travelPath.Waypoints.Count)
 					{
-						this.walkBackwards = !this.walkBackwards;
+						this.walkBackwards = true;
+						this.carriesStuff = false;
 						this.waypointIndex -= 2;
 					}
 				}
 			}
+
+			// Color the guy green
+			ActorRenderer renderer = this.GameObj.GetComponent<ActorRenderer>();
+			renderer.ColorTint = this.carriesStuff ? ColorRgba.Green : ColorRgba.White;
 
 			character.TargetMovement = movementDirection * movementSpeed;
 		}
