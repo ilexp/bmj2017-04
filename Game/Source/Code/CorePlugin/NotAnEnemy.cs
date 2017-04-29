@@ -4,6 +4,7 @@ using System.Linq;
 
 using Duality;
 using Duality.Components;
+using Duality.Resources;
 using Duality.Editor;
 using Duality.Input;
 using Duality.Components.Physics;
@@ -23,6 +24,7 @@ namespace Game
 		private bool walkBackwards;
 		private bool carriesStuff = true;
 		private float walkSpeed = 1.0f;
+		private ContentRef<Prefab> scoreText = null;
 
 
 		public Vector2 TargetPos
@@ -35,7 +37,21 @@ namespace Game
 			get { return this.travelPath; }
 			set { this.travelPath = value; }
 		}
+		public ContentRef<Prefab> ScoreText
+		{
+			get { return this.scoreText; }
+			set { this.scoreText = value; }
+		}
 
+
+		private void Score()
+		{
+			GameObject scoreObj = this.scoreText.Res.Instantiate();
+			FloatingText text = scoreObj.GetComponent<FloatingText>();
+			scoreObj.Transform.Pos = this.GameObj.Transform.Pos - Vector3.UnitY * 100;
+			text.Text = string.Format("+ {0}", MathF.Rnd.Next(1, 4) * 100);
+			this.GameObj.ParentScene.AddObject(scoreObj);
+		}
 
 		void ICmpUpdatable.OnUpdate()
 		{
@@ -98,6 +114,7 @@ namespace Game
 					this.waypointIndex++;
 					if (this.waypointIndex >= this.travelPath.Waypoints.Count)
 					{
+						this.Score();
 						this.walkBackwards = true;
 						this.carriesStuff = false;
 						this.waypointIndex -= 2;

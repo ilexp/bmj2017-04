@@ -794,6 +794,9 @@
             <active dataType="Bool">true</active>
             <carriesStuff dataType="Bool">true</carriesStuff>
             <gameobj dataType="ObjectRef">1319956896</gameobj>
+            <scoreText dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
+              <contentPath dataType="String">Data\FloatingText.Prefab.res</contentPath>
+            </scoreText>
             <targetPos dataType="Struct" type="Duality.Vector2" />
             <travelPath dataType="Struct" type="Game.MovementPath" id="3883748358">
               <active dataType="Bool">true</active>
