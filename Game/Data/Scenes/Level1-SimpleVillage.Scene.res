@@ -791,9 +791,9 @@
             <angularDamp dataType="Float">0.3</angularDamp>
             <angularVel dataType="Float">0</angularVel>
             <bodyType dataType="Enum" type="Duality.Components.Physics.BodyType" name="Dynamic" value="1" />
-            <colCat dataType="Enum" type="Duality.Components.Physics.CollisionCategory" name="Cat1" value="1" />
+            <colCat dataType="Enum" type="Duality.Components.Physics.CollisionCategory" name="Cat2" value="2" />
             <colFilter />
-            <colWith dataType="Enum" type="Duality.Components.Physics.CollisionCategory" name="All" value="2147483647" />
+            <colWith dataType="Enum" type="Duality.Components.Physics.CollisionCategory" name="Cat1, Cat3, Cat4, Cat5, Cat6, Cat7, Cat8, Cat9, Cat10, Cat11, Cat12, Cat13, Cat14, Cat15, Cat16, Cat17, Cat18, Cat19, Cat20, Cat21, Cat22, Cat23, Cat24, Cat25, Cat26, Cat27, Cat28, Cat29, Cat30, Cat31" value="2147483645" />
             <continous dataType="Bool">false</continous>
             <explicitInertia dataType="Float">0</explicitInertia>
             <explicitMass dataType="Float">80</explicitMass>
@@ -1429,6 +1429,8 @@
                 <_size dataType="Int">8</_size>
               </waypoints>
             </travelPath>
+            <walkBackwards dataType="Bool">false</walkBackwards>
+            <walkSpeed dataType="Float">1</walkSpeed>
             <waypointIndex dataType="Int">0</waypointIndex>
           </item>
         </_items>
