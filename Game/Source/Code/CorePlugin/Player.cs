@@ -8,23 +8,25 @@ using Duality.Editor;
 using Duality.Input;
 
 using Duality.Samples.Tilemaps.RpgLike;
+using Duality.Components.Physics;
+using Duality.Drawing;
 
 
-namespace Game
-{
-	public class Player : Component, ICmpUpdatable
-	{
+namespace Game {
+	public class Player : Component, ICmpUpdatable {
 		private CharacterController character;
+		private List<DistanceJointInfo> jointedThings = new List<DistanceJointInfo>();
 
-		public CharacterController Character
-		{
+		public CharacterController Character {
 			get { return this.character; }
 			set { this.character = value; }
 		}
 
-		void ICmpUpdatable.OnUpdate()
-		{
+		void ICmpUpdatable.OnUpdate() {
 			if (this.character == null) return;
+			if (DualityApp.Keyboard.KeyHit(Key.Q)) {
+				GrabObjects();
+			}	
 
 			// Keyboard character controls using WASD
 			Vector2 movement = Vector2.Zero;
@@ -38,8 +40,7 @@ namespace Game
 				movement += Vector2.UnitY;
 
 			// Gamepad character controls using the left stick
-			for (int i = 0; i < DualityApp.Gamepads.Count; i++)
-			{
+			for (int i = 0; i < DualityApp.Gamepads.Count; i++) {
 				// Those sticks can be a bit inaccurate / loose and report values up
 				// to around 0.25f without any player interaction. Filter those values
 				// out with a threshold, so we only move when the stick is actually moved
@@ -56,6 +57,25 @@ namespace Game
 				movement = movement.Normalized;
 
 			this.character.TargetMovement = movement;
+		}
+
+		private void GrabObjects() {
+			var playerPosition = character.GameObj.Transform.Pos;
+			VisualLog.Default.DrawPoint(playerPosition).WithOffset(-100);
+			var actionSquareSize = new Vector2(32, 32) * 2;
+			var list = RigidBody.QueryRectGlobal(playerPosition.Xy - (actionSquareSize/2) , actionSquareSize);
+			foreach (var item in list) {
+				if (item.GameObj.GetComponent<Obstacle>() != null) {
+					var distance = (item.GameObj.Transform.Pos - playerPosition).Length;
+					if (distance <= actionSquareSize.Length) {
+						//VisualLog.Default.DrawPoint(item.GameObj.Transform.Pos).WithOffset(-100).WithColor(ColorRgba.Red);
+						var rb = character.GameObj.GetComponent<RigidBody>();
+						var distJoint = new DistanceJointInfo();
+						distJoint.TargetDistance = 32;
+						rb.AddJoint(distJoint, item);
+					}
+				}
+			}
 		}
 	}
 }

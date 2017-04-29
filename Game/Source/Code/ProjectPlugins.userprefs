@@ -4,9 +4,10 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="CorePlugin\CameraController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CorePlugin\Obstacle.cs">
     <Files>
-      <File FileName="CorePlugin\CameraController.cs" Line="1" Column="1" />
+      <File FileName="CorePlugin\Player.cs" Line="63" Column="61" />
+      <File FileName="CorePlugin\Obstacle.cs" Line="3" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
 </Properties>
