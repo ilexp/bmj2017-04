@@ -55,14 +55,23 @@
     <Reference Include="DualityPrimitives">
       <HintPath>..\..\..\DualityPrimitives.dll</HintPath>
     </Reference>
+    <Reference Include="Tilemaps.core">
+      <HintPath>..\..\..\Plugins\Tilemaps.core.dll</HintPath>
+    </Reference>
+    <Reference Include="Tilemaps.Sample.core">
+      <HintPath>..\..\..\Plugins\Tilemaps.Sample.core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NotAnEnemy.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="CorePlugin.cs" />
     <Compile Include="CameraController.cs" />
     <Compile Include="Particle.cs" />
     <Compile Include="ParticleEffect.cs" />
     <Compile Include="ParticleEmitter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Obstacle.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <PropertyGroup>
