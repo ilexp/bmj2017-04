@@ -19,8 +19,16 @@
           <gameobj dataType="ObjectRef">3425304954</gameobj>
           <ignoreParent dataType="Bool">false</ignoreParent>
           <parentTransform />
-          <pos dataType="Struct" type="Duality.Vector3" />
-          <posAbs dataType="Struct" type="Duality.Vector3" />
+          <pos dataType="Struct" type="Duality.Vector3">
+            <X dataType="Float">67</X>
+            <Y dataType="Float">-50</Y>
+            <Z dataType="Float">0</Z>
+          </pos>
+          <posAbs dataType="Struct" type="Duality.Vector3">
+            <X dataType="Float">67</X>
+            <Y dataType="Float">-50</Y>
+            <Z dataType="Float">0</Z>
+          </posAbs>
           <scale dataType="Float">1</scale>
           <scaleAbs dataType="Float">1</scaleAbs>
           <vel dataType="Struct" type="Duality.Vector3" />
@@ -103,50 +111,50 @@
                   <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.AnimDirMapping">
                     <Angle dataType="Float">180</Angle>
                     <Direction dataType="String">Down</Direction>
-                    <SpriteSheetIndex dataType="Int">4</SpriteSheetIndex>
+                    <SpriteSheetIndex dataType="Int">20</SpriteSheetIndex>
                   </item>
                   <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.AnimDirMapping">
                     <Angle dataType="Float">270</Angle>
                     <Direction dataType="String">Left</Direction>
-                    <SpriteSheetIndex dataType="Int">7</SpriteSheetIndex>
+                    <SpriteSheetIndex dataType="Int">20</SpriteSheetIndex>
                   </item>
                   <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.AnimDirMapping">
                     <Angle dataType="Float">90</Angle>
                     <Direction dataType="String">Right</Direction>
-                    <SpriteSheetIndex dataType="Int">10</SpriteSheetIndex>
+                    <SpriteSheetIndex dataType="Int">20</SpriteSheetIndex>
                   </item>
                   <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.AnimDirMapping">
                     <Angle dataType="Float">0</Angle>
                     <Direction dataType="String">Up</Direction>
-                    <SpriteSheetIndex dataType="Int">13</SpriteSheetIndex>
+                    <SpriteSheetIndex dataType="Int">20</SpriteSheetIndex>
                   </item>
                 </startFrame>
               </item>
               <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.ActorAnimation" id="1125356438">
                 <duration dataType="Float">0.5</duration>
-                <frameCount dataType="Int">3</frameCount>
+                <frameCount dataType="Int">1</frameCount>
                 <name dataType="String">Walk</name>
                 <preferredLoopMode dataType="Enum" type="Duality.Samples.Tilemaps.RpgLike.ActorAnimator+LoopMode" name="PingPong" value="3" />
                 <startFrame dataType="Array" type="Duality.Samples.Tilemaps.RpgLike.AnimDirMapping[]" id="1294625102">
                   <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.AnimDirMapping">
                     <Angle dataType="Float">180</Angle>
                     <Direction dataType="String">Down</Direction>
-                    <SpriteSheetIndex dataType="Int">3</SpriteSheetIndex>
+                    <SpriteSheetIndex dataType="Int">21</SpriteSheetIndex>
                   </item>
                   <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.AnimDirMapping">
                     <Angle dataType="Float">270</Angle>
                     <Direction dataType="String">Left</Direction>
-                    <SpriteSheetIndex dataType="Int">6</SpriteSheetIndex>
+                    <SpriteSheetIndex dataType="Int">21</SpriteSheetIndex>
                   </item>
                   <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.AnimDirMapping">
                     <Angle dataType="Float">90</Angle>
                     <Direction dataType="String">Right</Direction>
-                    <SpriteSheetIndex dataType="Int">9</SpriteSheetIndex>
+                    <SpriteSheetIndex dataType="Int">21</SpriteSheetIndex>
                   </item>
                   <item dataType="Struct" type="Duality.Samples.Tilemaps.RpgLike.AnimDirMapping">
                     <Angle dataType="Float">0</Angle>
                     <Direction dataType="String">Up</Direction>
-                    <SpriteSheetIndex dataType="Int">12</SpriteSheetIndex>
+                    <SpriteSheetIndex dataType="Int">21</SpriteSheetIndex>
                   </item>
                 </startFrame>
               </item>

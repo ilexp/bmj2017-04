@@ -429,12 +429,12 @@
                     <pos dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">0</X>
                       <Y dataType="Float">0</Y>
-                      <Z dataType="Float">-500</Z>
+                      <Z dataType="Float">-250</Z>
                     </pos>
                     <posAbs dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">0</X>
                       <Y dataType="Float">0</Y>
-                      <Z dataType="Float">-500</Z>
+                      <Z dataType="Float">-250</Z>
                     </posAbs>
                     <scale dataType="Float">1</scale>
                     <scaleAbs dataType="Float">1</scaleAbs>
@@ -445,7 +445,7 @@
                   <posAbs dataType="Struct" type="Duality.Vector3">
                     <X dataType="Float">0</X>
                     <Y dataType="Float">0</Y>
-                    <Z dataType="Float">-500</Z>
+                    <Z dataType="Float">-250</Z>
                   </posAbs>
                   <scale dataType="Float">1</scale>
                   <scaleAbs dataType="Float">1</scaleAbs>
@@ -503,7 +503,7 @@
                   <posAbs dataType="Struct" type="Duality.Vector3">
                     <X dataType="Float">0</X>
                     <Y dataType="Float">0</Y>
-                    <Z dataType="Float">-500</Z>
+                    <Z dataType="Float">-250</Z>
                   </posAbs>
                   <scale dataType="Float">1</scale>
                   <scaleAbs dataType="Float">1</scaleAbs>
@@ -645,16 +645,28 @@
                               <_items dataType="Array" type="System.Int32[]" id="4060635756"></_items>
                               <_size dataType="Int">0</_size>
                             </childIndex>
-                            <componentType dataType="ObjectRef">2060286638</componentType>
-                            <prop dataType="MemberInfo" id="481503966" value="P:Duality.Components.Transform:RelativePos" />
-                            <val dataType="Struct" type="Duality.Vector3">
-                              <X dataType="Float">67</X>
-                              <Y dataType="Float">-50</Y>
-                              <Z dataType="Float">0</Z>
+                            <componentType dataType="ObjectRef">4212791012</componentType>
+                            <prop dataType="MemberInfo" id="481503966" value="P:Duality.Samples.Tilemaps.RpgLike.ActorRenderer:SharedMaterial" />
+                            <val dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
+                              <contentPath dataType="String">Data\Graphics\character.Material.res</contentPath>
+                            </val>
+                          </item>
+                          <item dataType="Struct" type="Duality.Resources.PrefabLink+VarMod">
+                            <childIndex dataType="Struct" type="System.Collections.Generic.List`1[[System.Int32]]" id="1058466100">
+                              <_items dataType="ObjectRef">4060635756</_items>
+                              <_size dataType="Int">0</_size>
+                            </childIndex>
+                            <componentType dataType="ObjectRef">4212791012</componentType>
+                            <prop dataType="MemberInfo" id="551337762" value="P:Duality.Samples.Tilemaps.RpgLike.ActorRenderer:Rect" />
+                            <val dataType="Struct" type="Duality.Rect">
+                              <H dataType="Float">32</H>
+                              <W dataType="Float">32</W>
+                              <X dataType="Float">-16</X>
+                              <Y dataType="Float">-24</Y>
                             </val>
                           </item>
                         </_items>
-                        <_size dataType="Int">1</_size>
+                        <_size dataType="Int">2</_size>
                       </changes>
                       <obj dataType="ObjectRef">264759339</obj>
                       <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
@@ -1306,7 +1318,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="MemberInfo" id="8871646" value="P:Duality.Components.Transform:RelativePos" />
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">141.483551</X>
                       <Y dataType="Float">11.225296</Y>
@@ -1382,7 +1394,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">138.483551</X>
                       <Y dataType="Float">68.225296</Y>
@@ -1458,7 +1470,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">138.484558</X>
                       <Y dataType="Float">68.225296</Y>
@@ -1543,7 +1555,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">121.485565</X>
                       <Y dataType="Float">-102.774704</Y>
@@ -1637,7 +1649,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">367.486572</X>
                       <Y dataType="Float">-275.774719</Y>
@@ -1722,7 +1734,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">423.487579</X>
                       <Y dataType="Float">-262.774719</Y>
@@ -1807,7 +1819,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">372.4886</X>
                       <Y dataType="Float">-225.774719</Y>
@@ -1892,7 +1904,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">-436.5104</X>
                       <Y dataType="Float">243.225281</Y>
@@ -1977,7 +1989,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">-371.5094</X>
                       <Y dataType="Float">261.225281</Y>
@@ -2062,7 +2074,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">-472.5084</X>
                       <Y dataType="Float">274.225281</Y>
@@ -2147,7 +2159,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">-440.5074</X>
                       <Y dataType="Float">-266.774719</Y>
@@ -2241,7 +2253,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">-354.506378</X>
                       <Y dataType="Float">-278.774719</Y>
@@ -2326,7 +2338,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">-411.505371</X>
                       <Y dataType="Float">-232.774719</Y>
@@ -2444,7 +2456,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">-489.999023</X>
                       <Y dataType="Float">5</Y>
@@ -2541,7 +2553,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">-444.998016</X>
                       <Y dataType="Float">7</Y>
@@ -2638,7 +2650,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">-398.997</X>
                       <Y dataType="Float">3</Y>
@@ -2735,7 +2747,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">-444.996</X>
                       <Y dataType="Float">-43</Y>
@@ -2832,7 +2844,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">-487.995</X>
                       <Y dataType="Float">-49</Y>
@@ -2929,7 +2941,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">-493.994</X>
                       <Y dataType="Float">-106</Y>
@@ -3026,7 +3038,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">-447.992981</X>
                       <Y dataType="Float">-106</Y>
@@ -3123,7 +3135,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">-487.991974</X>
                       <Y dataType="Float">-151</Y>
@@ -3220,7 +3232,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">-440.990967</X>
                       <Y dataType="Float">-163</Y>
@@ -3317,7 +3329,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">-486.98996</X>
                       <Y dataType="Float">-202</Y>
@@ -3414,7 +3426,7 @@
                       <_size dataType="Int">0</_size>
                     </childIndex>
                     <componentType dataType="ObjectRef">2060286638</componentType>
-                    <prop dataType="ObjectRef">481503966</prop>
+                    <prop dataType="ObjectRef">8871646</prop>
                     <val dataType="Struct" type="Duality.Vector3">
                       <X dataType="Float">-444.988953</X>
                       <Y dataType="Float">-210</Y>
